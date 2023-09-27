@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mozi>
+    <film id="1" mufaj="horror">
+        <rendezo id="2" nev="alex"/>
+        <szinesz id="3" nev="Madison_Ivy"/>
+        <iro id="4"/>
+    </film>
+</mozi>
