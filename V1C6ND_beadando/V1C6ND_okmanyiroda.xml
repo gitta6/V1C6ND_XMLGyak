@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<V1C6ND_okmanyiroda>
+<V1C6ND_okmanyiroda xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" > <!-- ezt még megcsinálni: xs:noNamespaceSchemaLocation=" .xsd" -->
 
     <!-- DOLGOZÓK -->
 
@@ -39,6 +39,7 @@
 
     <!-- további dolgozo elemek -->
 
+
     <!-- MUNKAKÖRÖK -->
 
     <munkakorok mid="1">
@@ -55,6 +56,7 @@
 
     <!-- további munkakorok elemek -->
 
+
     <!-- SZEREP -->
 
     <szerep did="1" mid="2"/>
@@ -70,6 +72,7 @@
     <szerep did="3" mid="5"/>
 
     <!-- további szerep elemek -->
+
 
     <!-- MUNKAKÖR ISMERETEK -->
 
@@ -99,6 +102,7 @@
 
     <!-- további munkakor_ism elemek -->
 
+
     <!-- ABLAK -->
 
     <ablak aid="1">
@@ -117,6 +121,7 @@
     </ablak>
 
     <!-- további ablak elemek -->
+
 
     <!-- ÜGYFÉL -->
 
@@ -161,18 +166,23 @@
 
     <!-- további ugyfel elemek -->
 
+
      <!-- FELETTES -->
      <felettes fid="1">
-        <nev> </nev>
-        <szig> </szig>
+        <nev>Piros Rózsa</nev>
+        <szig>468534WW</szig>
     </felettes>
+
          <felettes fid="2">
-        <nev> </nev>
-        <szig> </szig>
+        <nev>Szabó Tamás</nev>
+        <szig>795341AC</szig>
+
     </felettes>
          <felettes fid="3">
-        <nev> </nev>
-        <szig> </szig>
+        <nev>Lengyel László</nev>
+        <szig>861888JB</szig>
     </felettes>
+
+    <!-- további felettes elemek -->
 
 </V1C6ND_okmanyiroda>
