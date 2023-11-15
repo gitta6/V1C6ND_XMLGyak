@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<V1C6ND_okmanyiroda>
+
+    <!-- DOLGOZÓK -->
+
+    <dolgozo did="1">
+        <szig>14725AE</szig>
+        <nev>Tóth Erzsébet</nev>
+        <szulido>1985-07-11</szulido>
+        <irsz>3300</irsz>
+        <varos>Eger</varos>
+        <utca>Széchenyi út</utca>
+        <hsz>2</hsz>
+        <fid>1</fid>
+    </dolgozo>
+
+    <dolgozo did="2">
+        <szig>65815FV</szig>
+        <nev>Nagy Zsigmond</nev>
+        <szulido>1970-01-05</szulido>
+        <irsz>3500</irsz>
+        <varos>Miskolc</varos>
+        <utca>Kossuth utca</utca>
+        <hsz>36A</hsz>
+        <fid>2</fid>
+    </dolgozo>
+
+    <dolgozo did="3">
+        <szig>148575UK</szig>
+        <nev>Kovács Levente</nev>
+        <szulido>1995-12-08</szulido>
+        <irsz>3434</irsz>
+        <varos>Mályi</varos>
+        <utca>Petőfi út</utca>
+        <hsz>50</hsz>
+        <fid>2</fid>
+    </dolgozo>
+
+    <!-- további dolgozo elemek -->
+
+    <!-- MUNKAKÖRÖK -->
+
+    <munkakorok mid="1">
+        <megnevezes>NAV ügyintéző</megnevezes>
+    </munkakorok>
+
+    <munkakorok mid="2">
+        <megnevezes>gépjármű ügyintéző</megnevezes>
+    </munkakorok>
+
+    <munkakorok mid="3">
+        <megnevezes>CSOK ügyintéző</megnevezes>
+    </munkakorok>
+
+    <!-- további munkakorok elemek -->
+
+    <!-- SZEREP -->
+
+    <szerep did="1" mid="2"/>
+        <helyettesit-e>0</helyettesit-e>
+    <szerep did="1" mid="3"/>
+        <helyettesit-e>0</helyettesit-e>
+    <szerep did="1" mid="8"/>
+        <helyettesit-e>0</helyettesit-e>
+    <szerep did="2" mid="1"/>
+        <helyettesit-e>1</helyettesit-e>
+    <szerep did="3" mid="4"/>
+        <helyettesit-e>0</helyettesit-e> 
+    <szerep did="3" mid="5"/>
+
+    <!-- további szerep elemek -->
+
+    <!-- MUNKAKÖR ISMERETEK -->
+
+    <munkakor_ism mid="1">
+        <ismeretek>adóbevallás kezelése</ismeretek>
+    </munkakor_ism>
+
+    <munkakor_ism mid="1">
+        <ismeretek>adózási ismeretek</ismeretek>
+    </munkakor_ism>
+
+    <munkakor_ism mid="1">
+        <ismeretek>MS Office ismeretek</ismeretek>
+    </munkakor_ism>
+
+    <munkakor_ism mid="2">
+        <ismeretek>adásvételi szerződés kezelése</ismeretek>
+    </munkakor_ism>
+
+    <munkakor_ism mid="2">
+        <ismeretek>törzskönyv kezelése</ismeretek>
+    </munkakor_ism>
+
+    <munkakor_ism mid="2">
+        <ismeretek>forgalmi engedély kezelése</ismeretek>
+    </munkakor_ism>
+
+    <!-- további munkakor_ism elemek -->
+
+    <!-- ABLAK -->
+
+    <ablak aid="1">
+        <ugykor>adóbevallás</ugykor>
+        <did>2</did>
+    </ablak>
+
+    <ablak aid="2">
+        <ugykor>személyig.</ugykor>
+        <did>4</did>
+    </ablak>
+
+    <ablak aid="3">
+        <ugykor>személyes iratok</ugykor>
+        <did>3</did>
+    </ablak>
+
+    <!-- további ablak elemek -->
+
+    <!-- ÜGYFÉL -->
+
+    <ugyfel u_id="1">
+        <szig>577403KE</szig>
+        <nev>Hegyi Károly</nev>
+        <szulido>1969-09-15</szulido>
+        <irsz>3432</irsz>
+        <varos>Emőd</varos>
+        <utca>Kossuth út</utca>
+        <hsz>15</hsz>
+        <aid>3</aid>
+        <belepes>2022-11-18 08:06:00</belepes>
+        <kilepes>2022-11-18 08:24:00</kilepes>
+    </ugyfel>
+
+    <ugyfel u_id="2">
+        <szig>775491HB</szig>
+        <nev>Kis Elek</nev>
+        <szulido>1979-04-05</szulido>
+        <irsz>3300</irsz>
+        <varos>Eger</varos>
+        <utca>Petőfi út</utca>
+        <hsz>6B</hsz>
+        <aid>5</aid>
+        <belepes>2022-11-18 08:10:00</belepes>
+        <kilepes>2022-11-18 08:25:00</kilepes>
+    </ugyfel>
+
+    <ugyfel u_id="3">
+        <szig>224546DF</szig>
+        <nev>Tóth Mária</nev>
+        <szulido>1980-12-25</szulido>
+        <irsz>3400</irsz>
+        <varos>Mezőkövesd</varos>
+        <utca>Mátyás király út</utca>
+        <hsz>189</hsz>
+        <aid>2</aid>
+        <belepes>2022-11-18 08:11:00</belepes>
+        <kilepes>2022-11-18 08:29:00</kilepes>
+    </ugyfel>
+
+    <!-- további ugyfel elemek -->
+
+     <!-- FELETTES -->
+     <felettes fid="1">
+        <nev> </nev>
+        <szig> </szig>
+    </felettes>
+         <felettes fid="2">
+        <nev> </nev>
+        <szig> </szig>
+    </felettes>
+         <felettes fid="3">
+        <nev> </nev>
+        <szig> </szig>
+    </felettes>
+
+</V1C6ND_okmanyiroda>
