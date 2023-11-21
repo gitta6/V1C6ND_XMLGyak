@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<V1C6ND_okmanyiroda xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" > <!-- ezt még megcsinálni: xs:noNamespaceSchemaLocation=" .xsd" -->
+<V1C6ND_okmanyiroda xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"  xs:noNamespaceSchemaLocation="V1C6ND_okmanyiroda.xsd"> 
 
     <!-- DOLGOZÓK -->
 
