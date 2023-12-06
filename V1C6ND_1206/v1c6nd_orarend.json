@@ -1,0 +1,140 @@
+{
+    "root": {
+        "_id": "V1C6ND",
+        "name": "orarend",
+        "orarend": {
+            "ora": [
+                {
+                    "id": "1",
+                    "tipus": "eloadas",
+                    "kurzusnev": "Adatkezeles XML-ben",
+                    "idopont": {
+                        "nap": "Kedd",
+                        "kezdes": "12",
+                        "befejezes": "14"
+                    },
+                    "hely": "XXXII. eloado",
+                    "oktato": "Dr. Bednarik Laszlo",
+                    "szak": "BGI"
+                },
+                {
+                    "id": "2",
+                    "tipus": "gyakolat",
+                    "kurzusnev": "Adatkezeles XML-ben",
+                    "idopont": {
+                        "nap": "Szerda",
+                        "kezdes": "10",
+                        "befejezes": "12"
+                    },
+                    "hely": "Inf101",
+                    "oktato": "Dr. Bednarik Laszlo",
+                    "szak": "BGI"
+                },
+                {
+                    "id": "3",
+                    "tipus": "eloadas",
+                    "kurzusnev": "Mesterseges Intelligencia alapjai",
+                    "idopont": {
+                        "nap": "Kedd",
+                        "kezdes": "10",
+                        "befejezes": "12"
+                    },
+                    "hely": "XXXII. eloado",
+                    "oktato": "Kunne Dr. Tamas Judit",
+                    "szak": "BGI"
+                },
+                {
+                    "id": "4",
+                    "tipus": "gyakorlat",
+                    "kurzusnev": "Mesterseges Intelligencia alapjai",
+                    "idopont": {
+                        "nap": "Csutortok",
+                        "kezdes": "10",
+                        "befejezes": "12"
+                    },
+                    "hely": "I. eloado",
+                    "oktato": "Fazekas Levente",
+                    "szak": "BGI"
+                },
+                {
+                    "id": "5",
+                    "tipus": "eloadas",
+                    "kurzusnev": "Penzugytan",
+                    "idopont": {
+                        "nap": "Hetfo",
+                        "kezdes": "10",
+                        "befejezes": "12"
+                    },
+                    "hely": "XXXVII. eloado",
+                    "oktato": "Dr. Bozsik Sandor",
+                    "szak": "BGI"
+                },
+                {
+                    "id": "6",
+                    "tipus": "gyakorlat",
+                    "kurzusnev": "Penzugytan",
+                    "idopont": {
+                        "nap": "Szerda",
+                        "kezdes": "8",
+                        "befejezes": "10"
+                    },
+                    "hely": "A1-204",
+                    "oktato": "Dr. Suveges Gabor",
+                    "szak": "BGI"
+                },
+                {
+                    "id": "7",
+                    "tipus": "eloadas",
+                    "kurzusnev": "WEB technologiak",
+                    "idopont": {
+                        "nap": "Hetfo",
+                        "kezdes": "14",
+                        "befejezes": "16"
+                    },
+                    "hely": "XXX. eloado",
+                    "oktato": "Dr. Agardi Anita",
+                    "szak": "BGI"
+                },
+                {
+                    "id": "8",
+                    "tipus": "gyakorlat",
+                    "kurzusnev": "WEB technologiak",
+                    "idopont": {
+                        "nap": "Hetfo",
+                        "kezdes": "16",
+                        "befejezes": "18"
+                    },
+                    "hely": "Inf202",
+                    "oktato": "Dr. Agardi Anita",
+                    "szak": "BGI"
+                },
+                {
+                    "id": "9",
+                    "tipus": "eloadas",
+                    "kurzusnev": "Szamvitel",
+                    "idopont": {
+                        "nap": "Kedd",
+                        "kezdes": "8",
+                        "befejezes": "10"
+                    },
+                    "hely": "VIII. eloado",
+                    "oktato": "Dr. Pal Tibor",
+                    "szak": "BGI"
+                },
+                {
+                    "id": "10",
+                    "tipus": "gyakorlat",
+                    "kurzusnev": "Szamvitel",
+                    "idopont": {
+                        "nap": "Szerda",
+                        "kezdes": "12",
+                        "befejezes": "14"
+                    },
+                    "hely": "XII. eloado",
+                    "oktato": "Varkonyine Dr. Juhasz Maria",
+                    "szak": "BGI"
+                }
+            ]
+        }
+    }
+}
