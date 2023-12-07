@@ -1,132 +1,132 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<okmanyiroda xmlns="XMLV1C6ND">
-  <dolgozo did="1">
-    <szig>14725AE</szig>
-    <nev>Tóth Erzsébet</nev>
-    <szulido>1985-07-11</szulido>
-    <irsz>3300</irsz>
-    <varos>Eger</varos>
-    <utca>Széchenyi út</utca>
-    <hsz>2</hsz>
-    <fid>1</fid>
-  </dolgozo>
-  <dolgozo did="2">
-    <szig>65815FV</szig>
-    <nev>Nagy Zsigmond</nev>
-    <szulido>1970-01-05</szulido>
-    <irsz>3500</irsz>
-    <varos>Miskolc</varos>
-    <utca>Kossuth utca</utca>
-    <hsz>36A</hsz>
-    <fid>2</fid>
-  </dolgozo>
-  <dolgozo did="3">
-    <szig>148575UK</szig>
-    <nev>Kovács Levente</nev>
-    <szulido>1995-12-08</szulido>
-    <irsz>3434</irsz>
-    <varos>Mályi</varos>
-    <utca>Petõfi út</utca>
-    <hsz>50</hsz>
-    <fid>2</fid>
-  </dolgozo>
-  <munkakorok mid="1">
-    <megnevezes>NAV ügyintézõ</megnevezes>
-  </munkakorok>
-  <munkakorok mid="2">
-    <megnevezes>gépjármû ügyintézõ</megnevezes>
-  </munkakorok>
-  <munkakorok mid="3">
-    <megnevezes>CSOK ügyintézõ</megnevezes>
-  </munkakorok>
-  <szerep did="1" mid="2">
-    <helyettesit-e>0</helyettesit-e>
-  </szerep>
-  <szerep did="1" mid="3">
-    <helyettesit-e>0</helyettesit-e>
-  </szerep>
-  <szerep did="1" mid="8">
-    <helyettesit-e>0</helyettesit-e>
-  </szerep>
-  <szerep did="2" mid="1">
-    <helyettesit-e>1</helyettesit-e>
-  </szerep>
-  <szerep did="3" mid="4">
-    <helyettesit-e>0</helyettesit-e>
-  </szerep>
-  <szerep did="3" mid="5">
-    <helyettesit-e>0</helyettesit-e>
-  </szerep>
-  <munkakor_ism mid="1">
-    <ismeretek>adóbevallás kezelése</ismeretek>
-  </munkakor_ism>
-  <munkakor_ism mid="1">
-    <ismeretek>adózási ismeretek</ismeretek>
-  </munkakor_ism>
-  <munkakor_ism mid="1">
-    <ismeretek>MS Office ismeretek</ismeretek>
-  </munkakor_ism>
-  <munkakor_ism mid="2">
-    <ismeretek>adásvételi szerzõdés kezelése</ismeretek>
-  </munkakor_ism>
-  <munkakor_ism mid="2">
-    <ismeretek>törzskönyv kezelése</ismeretek>
-  </munkakor_ism>
-  <munkakor_ism mid="2">
-    <ismeretek>forgalmi engedély kezelése</ismeretek>
-  </munkakor_ism>
-  <ablak aid="1" did="2">
-    <ugykor>adóbevallás</ugykor>
-  </ablak>
-  <ablak aid="2" did="4">
-    <ugykor>személyig.</ugykor>
-  </ablak>
-  <ablak aid="3" did="3">
-    <ugykor>személyes iratok</ugykor>
-  </ablak>
-  <ugyfel aid="3" uid="1">
-    <szig>577403KE</szig>
-    <nev>Hegyi Károly</nev>
-    <szulido>1969-09-15</szulido>
-    <irsz>3432</irsz>
-    <varos>Emõd</varos>
-    <utca>Kossuth út</utca>
-    <hsz>15</hsz>
-    <belepes>2022-11-18T08:06:00</belepes>
-    <kilepes>2022-11-18T08:24:00</kilepes>
-  </ugyfel>
-  <ugyfel aid="5" uid="2">
-    <szig>775491HB</szig>
-    <nev>Kis Elek</nev>
-    <szulido>1979-04-05</szulido>
-    <irsz>3300</irsz>
-    <varos>Eger</varos>
-    <utca>Petõfi út</utca>
-    <hsz>6B</hsz>
-    <belepes>2022-11-18T08:10:00</belepes>
-    <kilepes>2022-11-18T08:25:00</kilepes>
-  </ugyfel>
-  <ugyfel aid="2" uid="3">
-    <szig>224546DF</szig>
-    <nev>Tóth Mária</nev>
-    <szulido>1980-12-25</szulido>
-    <irsz>3400</irsz>
-    <varos>Mezõkövesd</varos>
-    <utca>Mátyás király út</utca>
-    <hsz>189</hsz>
-    <belepes>2022-11-18T08:11:00</belepes>
-    <kilepes>2022-11-18T08:29:00</kilepes>
-  </ugyfel>
-  <felettes fid="1">
-    <szig>468534WW</szig>
-    <nev>Piros Rózsa</nev>
-  </felettes>
-  <felettes fid="2">
-    <szig>795341AC</szig>
-    <nev>Szabó Tamás</nev>
-  </felettes>
-  <felettes fid="3">
-    <szig>861888JB</szig>
-    <nev>Lengyel László</nev>
-  </felettes>
-</okmanyiroda>
+<V1C6ND_okmanyiroda xmlns="XMLV1C6ND">
+     <dolgozo did="1">
+          <szig>14725AE</szig>
+          <nev>TÃ³th ErzsÃ©bet</nev>
+          <szulido>1985-07-11</szulido>
+          <irsz>3300</irsz>
+          <varos>Eger</varos>
+          <utca>SzÃ©chenyi Ãºt</utca>
+          <hsz>2</hsz>
+          <fid>1</fid>
+     </dolgozo>
+     <dolgozo did="2">
+          <szig>65815FV</szig>
+          <nev>Nagy Zsigmond</nev>
+          <szulido>1970-01-05</szulido>
+          <irsz>3500</irsz>
+          <varos>Miskolc</varos>
+          <utca>Kossuth utca</utca>
+          <hsz>36A</hsz>
+          <fid>2</fid>
+     </dolgozo>
+     <dolgozo did="3">
+          <szig>148575UK</szig>
+          <nev>KovÃ¡cs Levente</nev>
+          <szulido>1995-12-08</szulido>
+          <irsz>3434</irsz>
+          <varos>MÃ¡lyi</varos>
+          <utca>PetÅ‘fi Ãºt</utca>
+          <hsz>50</hsz>
+          <fid>2</fid>
+     </dolgozo>
+     <munkakorok mid="1">
+          <megnevezes>NAV Ã¼gyintÃ©zÅ‘</megnevezes>
+     </munkakorok>
+     <munkakorok mid="2">
+          <megnevezes>gÃ©pjÃ¡rmÅ± Ã¼gyintÃ©zÅ‘</megnevezes>
+     </munkakorok>
+     <munkakorok mid="3">
+          <megnevezes>CSOK Ã¼gyintÃ©zÅ‘</megnevezes>
+     </munkakorok>
+     <szerep did="1" mid="2">
+          <helyettesit-e>0</helyettesit-e>
+     </szerep>
+     <szerep did="1" mid="3">
+          <helyettesit-e>0</helyettesit-e>
+     </szerep>
+     <szerep did="1" mid="8">
+          <helyettesit-e>0</helyettesit-e>
+     </szerep>
+     <szerep did="2" mid="1">
+          <helyettesit-e>1</helyettesit-e>
+     </szerep>
+     <szerep did="3" mid="4">
+          <helyettesit-e>0</helyettesit-e>
+     </szerep>
+     <szerep did="3" mid="5">
+          <helyettesit-e>0</helyettesit-e>
+     </szerep>
+     <munkakor_ism mid="1">
+          <ismeretek>adÃ³bevallÃ¡s kezelÃ©se</ismeretek>
+     </munkakor_ism>
+     <munkakor_ism mid="1">
+          <ismeretek>adÃ³zÃ¡si ismeretek</ismeretek>
+     </munkakor_ism>
+     <munkakor_ism mid="1">
+          <ismeretek>MS Office ismeretek</ismeretek>
+     </munkakor_ism>
+     <munkakor_ism mid="2">
+          <ismeretek>adÃ¡svÃ©teli szerzÅ‘dÃ©s kezelÃ©se</ismeretek>
+     </munkakor_ism>
+     <munkakor_ism mid="2">
+          <ismeretek>tÃ¶rzskÃ¶nyv kezelÃ©se</ismeretek>
+     </munkakor_ism>
+     <munkakor_ism mid="2">
+          <ismeretek>forgalmi engedÃ©ly kezelÃ©se</ismeretek>
+     </munkakor_ism>
+     <ablak aid="1" did="2">
+          <ugykor>adÃ³bevallÃ¡s</ugykor>
+     </ablak>
+     <ablak aid="2" did="4">
+          <ugykor>szemÃ©lyig.</ugykor>
+     </ablak>
+     <ablak aid="3" did="3">
+          <ugykor>szemÃ©lyes iratok</ugykor>
+     </ablak>
+     <ugyfel aid="3" uid="1">
+          <szig>577403KE</szig>
+          <nev>Hegyi KÃ¡roly</nev>
+          <szulido>1969-09-15</szulido>
+          <irsz>3432</irsz>
+          <varos>EmÅ‘d</varos>
+          <utca>Kossuth Ãºt</utca>
+          <hsz>15</hsz>
+          <belepes>2022-11-18T08:06:00</belepes>
+          <kilepes>2022-11-18T08:24:00</kilepes>
+     </ugyfel>
+     <ugyfel aid="5" uid="2">
+          <szig>775491HB</szig>
+          <nev>Kis Elek</nev>
+          <szulido>1979-04-05</szulido>
+          <irsz>3300</irsz>
+          <varos>Eger</varos>
+          <utca>PetÅ‘fi Ãºt</utca>
+          <hsz>6B</hsz>
+          <belepes>2022-11-18T08:10:00</belepes>
+          <kilepes>2022-11-18T08:25:00</kilepes>
+     </ugyfel>
+     <ugyfel aid="2" uid="3">
+          <szig>224546DF</szig>
+          <nev>TÃ³th MÃ¡ria</nev>
+          <szulido>1980-12-25</szulido>
+          <irsz>3400</irsz>
+          <varos>MezÅ‘kÃ¶vesd</varos>
+          <utca>MÃ¡tyÃ¡s kirÃ¡ly Ãºt</utca>
+          <hsz>189</hsz>
+          <belepes>2022-11-18T08:11:00</belepes>
+          <kilepes>2022-11-18T08:29:00</kilepes>
+     </ugyfel>
+     <felettes fid="1">
+          <szig>468534WW</szig>
+          <nev>Piros RÃ³zsa</nev>
+     </felettes>
+     <felettes fid="2">
+          <szig>795341AC</szig>
+          <nev>SzabÃ³ TamÃ¡s</nev>
+     </felettes>
+     <felettes fid="3">
+          <szig>861888JB</szig>
+          <nev>Lengyel LÃ¡szlÃ³</nev>
+     </felettes>
+</V1C6ND_okmanyiroda>
