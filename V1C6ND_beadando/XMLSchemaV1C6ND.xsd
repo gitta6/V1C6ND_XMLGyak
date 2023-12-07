@@ -5,25 +5,25 @@
             <xs:sequence>
 
                 <!-- DOLGOZÓK -->
-                <xs:element name="dolgozo" type="dolgozoType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="dolgozo" type="dolgozotype" minOccurs="1" maxOccurs="unbounded"/>
 
                 <!-- MUNKAKÖRÖK -->
-                <xs:element name="munkakorok" type="munkakorokType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="munkakorok" type="munkakoroktype" minOccurs="1" maxOccurs="unbounded"/>
 
                 <!-- SZEREP -->
-                <xs:element name="szerep" type="szerepType" minOccurs="1" maxOccurs="unbounded"/>
-
+                <xs:element name="szerep" type="szereptype" minOccurs="1" maxOccurs="unbounded"/>
+  
                 <!-- MUNKAKÖR ISMERETEK -->
-                <xs:element name="munkakor_ism" type="munkakor_ismType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="munkakor_ism" type="munkakor_ismtype" minOccurs="1" maxOccurs="unbounded"/>
 
                 <!-- ABLAK -->
-                <xs:element name="ablak" type="ablakType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="ablak" type="ablaktype" minOccurs="1" maxOccurs="unbounded"/>
 
                 <!-- ÜGYFÉL -->
-                <xs:element name="ugyfel" type="ugyfelType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="ugyfel" type="ugyfeltype" minOccurs="1" maxOccurs="unbounded"/>
 
                 <!-- FELETTES -->
-                <xs:element name="felettes" type="felettesType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="felettes" type="felettestype" minOccurs="1" maxOccurs="unbounded"/>
 
             </xs:sequence>
         </xs:complexType>
@@ -32,7 +32,7 @@
     <!-- Komplex típusok definíciói -->
 
     <!-- DOLGOZÓ típus -->
-    <xs:complexType name="dolgozoType">
+    <xs:complexType name="dolgozotype">
         <xs:sequence>
             <xs:element name="szig" type="xs:string"/>
             <xs:element name="nev" type="xs:string"/>
@@ -47,7 +47,7 @@
     </xs:complexType>
 
     <!-- MUNKAKÖRÖK típus -->
-    <xs:complexType name="munkakorokType">
+    <xs:complexType name="munkakoroktype">
         <xs:sequence>
             <xs:element name="megnevezes" type="xs:string"/>
         </xs:sequence>
@@ -55,7 +55,7 @@
     </xs:complexType>
 
     <!-- SZEREP típus -->
-    <xs:complexType name="szerepType">
+    <xs:complexType name="szereptype">
         <xs:sequence>
             <xs:element name="helyettesit-e" type="xs:boolean"/>
         </xs:sequence>
@@ -64,7 +64,7 @@
     </xs:complexType>
 
     <!-- MUNKAKÖR ISMERETEK típus -->
-    <xs:complexType name="munkakor_ismType">
+    <xs:complexType name="munkakor_ismtype">
         <xs:sequence>
             <xs:element name="ismeretek" type="xs:string"/>
         </xs:sequence>
@@ -72,7 +72,7 @@
     </xs:complexType>
 
     <!-- ABLAK típus -->
-    <xs:complexType name="ablakType">
+    <xs:complexType name="ablaktype">
         <xs:sequence>
             <xs:element name="ugykor" type="xs:string"/>
             <xs:element name="did" type="xs:integer"/>
@@ -81,7 +81,7 @@
     </xs:complexType>
 
     <!-- ÜGYFÉL típus -->
-    <xs:complexType name="ugyfelType">
+    <xs:complexType name="ugyfeltype">
         <xs:sequence>
             <xs:element name="szig" type="xs:string"/>
             <xs:element name="nev" type="xs:string"/>
@@ -90,12 +90,15 @@
             <xs:element name="varos" type="xs:string"/>
             <xs:element name="utca" type="xs:string"/>
             <xs:element name="hsz" type="xs:string"/>
+            <xs:element name="aid" type="xs:integer"/>
+            <xs:element name="belepes" type="xs:dateTime"/>
+            <xs:element name="kilepes" type="xs:dateTime"/>
         </xs:sequence>
         <xs:attribute name="uid" type="xs:integer" use="required"/>
     </xs:complexType>
 
     <!-- FELETTES típus -->
-    <xs:complexType name="felettesType">
+    <xs:complexType name="felettestype">
         <xs:sequence>
             <xs:element name="szig" type="xs:string"/>
             <xs:element name="nev" type="xs:string"/>

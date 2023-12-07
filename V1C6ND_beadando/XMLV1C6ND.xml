@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<V1C6ND_okmanyiroda xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"  xs:noNamespaceSchemaLocation="V1C6ND_okmanyiroda.xsd"> 
+<V1C6ND_okmanyiroda xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaV1C6ND.xsd">
 
     <!-- DOLGOZÓK -->
 
@@ -39,7 +38,6 @@
 
     <!-- további dolgozo elemek -->
 
-
     <!-- MUNKAKÖRÖK -->
 
     <munkakorok mid="1">
@@ -56,23 +54,28 @@
 
     <!-- további munkakorok elemek -->
 
-
     <!-- SZEREP -->
 
-    <szerep did="1" mid="2"/>
+    <szerep did="1" mid="2">
         <helyettesit-e>0</helyettesit-e>
-    <szerep did="1" mid="3"/>
+    </szerep>
+    <szerep did="1" mid="3">
         <helyettesit-e>0</helyettesit-e>
-    <szerep did="1" mid="8"/>
+    </szerep>
+    <szerep did="1" mid="8">
         <helyettesit-e>0</helyettesit-e>
-    <szerep did="2" mid="1"/>
+    </szerep>
+    <szerep did="2" mid="1">
         <helyettesit-e>1</helyettesit-e>
-    <szerep did="3" mid="4"/>
-        <helyettesit-e>0</helyettesit-e> 
-    <szerep did="3" mid="5"/>
+    </szerep>
+    <szerep did="3" mid="4">
+        <helyettesit-e>0</helyettesit-e>
+    </szerep>
+    <szerep did="3" mid="5">
+        <helyettesit-e>0</helyettesit-e>
+    </szerep>
 
     <!-- további szerep elemek -->
-
 
     <!-- MUNKAKÖR ISMERETEK -->
 
@@ -102,7 +105,6 @@
 
     <!-- további munkakor_ism elemek -->
 
-
     <!-- ABLAK -->
 
     <ablak aid="1">
@@ -122,10 +124,9 @@
 
     <!-- további ablak elemek -->
 
-
     <!-- ÜGYFÉL -->
 
-    <ugyfel u_id="1">
+    <ugyfel uid="1">
         <szig>577403KE</szig>
         <nev>Hegyi Károly</nev>
         <szulido>1969-09-15</szulido>
@@ -134,11 +135,11 @@
         <utca>Kossuth út</utca>
         <hsz>15</hsz>
         <aid>3</aid>
-        <belepes>2022-11-18 08:06:00</belepes>
-        <kilepes>2022-11-18 08:24:00</kilepes>
+        <belepes>2022-11-18T08:06:00</belepes>
+        <kilepes>2022-11-18T08:24:00</kilepes>
     </ugyfel>
 
-    <ugyfel u_id="2">
+    <ugyfel uid="2">
         <szig>775491HB</szig>
         <nev>Kis Elek</nev>
         <szulido>1979-04-05</szulido>
@@ -147,11 +148,11 @@
         <utca>Petőfi út</utca>
         <hsz>6B</hsz>
         <aid>5</aid>
-        <belepes>2022-11-18 08:10:00</belepes>
-        <kilepes>2022-11-18 08:25:00</kilepes>
+        <belepes>2022-11-18T08:10:00</belepes>
+        <kilepes>2022-11-18T08:25:00</kilepes>
     </ugyfel>
 
-    <ugyfel u_id="3">
+    <ugyfel uid="3">
         <szig>224546DF</szig>
         <nev>Tóth Mária</nev>
         <szulido>1980-12-25</szulido>
@@ -160,27 +161,26 @@
         <utca>Mátyás király út</utca>
         <hsz>189</hsz>
         <aid>2</aid>
-        <belepes>2022-11-18 08:11:00</belepes>
-        <kilepes>2022-11-18 08:29:00</kilepes>
+        <belepes>2022-11-18T08:11:00</belepes>
+        <kilepes>2022-11-18T08:29:00</kilepes>
     </ugyfel>
 
     <!-- további ugyfel elemek -->
 
-
-     <!-- FELETTES -->
-     <felettes fid="1">
-        <nev>Piros Rózsa</nev>
+    <!-- FELETTES -->
+    <felettes fid="1">
         <szig>468534WW</szig>
+        <nev>Piros Rózsa</nev>
     </felettes>
 
-         <felettes fid="2">
-        <nev>Szabó Tamás</nev>
+    <felettes fid="2">
         <szig>795341AC</szig>
-
+        <nev>Szabó Tamás</nev>
     </felettes>
-         <felettes fid="3">
-        <nev>Lengyel László</nev>
+
+    <felettes fid="3">
         <szig>861888JB</szig>
+        <nev>Lengyel László</nev>
     </felettes>
 
     <!-- további felettes elemek -->

@@ -1,7 +1,7 @@
 <!DOCTYPE V1C6ND_orarend SYSTEM "v1c6nd_orarend.dtd">
 <?xml version="1.0" encoding="UTF-8"?>
 
-    <V1C6ND_orarend xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNameSpaceSchemaLocation="v1c6nd_orarend.xsd">
+    <V1C6ND_orarend xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNameSpaceSchemaLocation="orarendV1C6ND.xsd">
     <ora id="1" tipus="eloadas">
         <kurzusnev>Adatkezeles XML-ben</kurzusnev>
         <idopont>

@@ -1,4 +1,4 @@
-package domV1C6ND1108;
+package V1C6ND_1108.DOMParseV1C6ND;
 import org.w3c.dom.*;
 import javax.xml.parsers.*;
 import java.io.*;
