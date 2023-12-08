@@ -3,7 +3,7 @@
 
     <!-- DOLGOZÓK -->
 
-    <dolgozo did="1">
+    <dolgozo did="1" fid="1">
         <szig>14725AE</szig>
         <nev>Tóth Erzsébet</nev>
         <szulido>1985-07-11</szulido>
@@ -11,10 +11,9 @@
         <varos>Eger</varos>
         <utca>Széchenyi út</utca>
         <hsz>2</hsz>
-        <fid>1</fid>
     </dolgozo>
 
-    <dolgozo did="2">
+    <dolgozo did="2" fid="2">
         <szig>65815FV</szig>
         <nev>Nagy Zsigmond</nev>
         <szulido>1970-01-05</szulido>
@@ -22,10 +21,9 @@
         <varos>Miskolc</varos>
         <utca>Kossuth utca</utca>
         <hsz>36A</hsz>
-        <fid>2</fid>
     </dolgozo>
 
-    <dolgozo did="3">
+    <dolgozo did="3" fid="2">
         <szig>148575UK</szig>
         <nev>Kovács Levente</nev>
         <szulido>1995-12-08</szulido>
@@ -33,7 +31,6 @@
         <varos>Mályi</varos>
         <utca>Petőfi út</utca>
         <hsz>50</hsz>
-        <fid>2</fid>
     </dolgozo>
 
     <!-- további dolgozo elemek -->
@@ -51,6 +48,11 @@
     <munkakorok mid="3">
         <megnevezes>CSOK ügyintéző</megnevezes>
     </munkakorok>
+  
+    <munkakorok mid="4">
+        <megnevezes>pályázati ügyintéző</megnevezes>
+    </munkakorok>
+
 
     <!-- további munkakorok elemek -->
 
@@ -59,19 +61,24 @@
     <szerep did="1" mid="2">
         <helyettesit-e>0</helyettesit-e>
     </szerep>
+
     <szerep did="1" mid="3">
         <helyettesit-e>0</helyettesit-e>
     </szerep>
-    <szerep did="1" mid="8">
+
+    <szerep did="1" mid="4">
         <helyettesit-e>0</helyettesit-e>
     </szerep>
+
     <szerep did="2" mid="1">
         <helyettesit-e>1</helyettesit-e>
     </szerep>
+
     <szerep did="3" mid="4">
         <helyettesit-e>0</helyettesit-e>
     </szerep>
-    <szerep did="3" mid="5">
+    
+    <szerep did="3" mid="2">
         <helyettesit-e>0</helyettesit-e>
     </szerep>
 
@@ -83,23 +90,23 @@
         <ismeretek>adóbevallás kezelése</ismeretek>
     </munkakor_ism>
 
-    <munkakor_ism mid="1">
+    <munkakor_ism mid="2">
         <ismeretek>adózási ismeretek</ismeretek>
     </munkakor_ism>
 
-    <munkakor_ism mid="1">
+    <munkakor_ism mid="3">
         <ismeretek>MS Office ismeretek</ismeretek>
     </munkakor_ism>
 
-    <munkakor_ism mid="2">
+    <munkakor_ism mid="4">
         <ismeretek>adásvételi szerződés kezelése</ismeretek>
     </munkakor_ism>
 
-    <munkakor_ism mid="2">
+    <munkakor_ism mid="5">
         <ismeretek>törzskönyv kezelése</ismeretek>
     </munkakor_ism>
 
-    <munkakor_ism mid="2">
+    <munkakor_ism mid="6">
         <ismeretek>forgalmi engedély kezelése</ismeretek>
     </munkakor_ism>
 
@@ -107,26 +114,23 @@
 
     <!-- ABLAK -->
 
-    <ablak aid="1">
+    <ablak aid="1" did="2">
         <ugykor>adóbevallás</ugykor>
-        <did>2</did>
     </ablak>
 
-    <ablak aid="2">
+    <ablak aid="2" did="4">
         <ugykor>személyig.</ugykor>
-        <did>4</did>
     </ablak>
 
-    <ablak aid="3">
+    <ablak aid="3" did="3">
         <ugykor>személyes iratok</ugykor>
-        <did>3</did>
     </ablak>
 
     <!-- további ablak elemek -->
 
     <!-- ÜGYFÉL -->
 
-    <ugyfel uid="1">
+    <ugyfel uid="1" aid="3">
         <szig>577403KE</szig>
         <nev>Hegyi Károly</nev>
         <szulido>1969-09-15</szulido>
@@ -134,12 +138,11 @@
         <varos>Emőd</varos>
         <utca>Kossuth út</utca>
         <hsz>15</hsz>
-        <aid>3</aid>
         <belepes>2022-11-18T08:06:00</belepes>
         <kilepes>2022-11-18T08:24:00</kilepes>
     </ugyfel>
 
-    <ugyfel uid="2">
+    <ugyfel uid="2" aid="1">
         <szig>775491HB</szig>
         <nev>Kis Elek</nev>
         <szulido>1979-04-05</szulido>
@@ -147,12 +150,11 @@
         <varos>Eger</varos>
         <utca>Petőfi út</utca>
         <hsz>6B</hsz>
-        <aid>5</aid>
         <belepes>2022-11-18T08:10:00</belepes>
         <kilepes>2022-11-18T08:25:00</kilepes>
     </ugyfel>
 
-    <ugyfel uid="3">
+    <ugyfel uid="3" aid="2">
         <szig>224546DF</szig>
         <nev>Tóth Mária</nev>
         <szulido>1980-12-25</szulido>
@@ -160,7 +162,6 @@
         <varos>Mezőkövesd</varos>
         <utca>Mátyás király út</utca>
         <hsz>189</hsz>
-        <aid>2</aid>
         <belepes>2022-11-18T08:11:00</belepes>
         <kilepes>2022-11-18T08:29:00</kilepes>
     </ugyfel>

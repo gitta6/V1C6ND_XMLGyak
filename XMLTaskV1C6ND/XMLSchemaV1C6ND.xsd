@@ -1,109 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- Egyszerű és saját típusok: -->
+
+    <xs:element name="szig" type="xs:string"/>
+    <xs:element name="nev" type="xs:string"/>
+    <xs:element name="szulido" type="xs:date"/>
+    <xs:element name="irsz" type="xs:integer"/>
+    <xs:element name="varos" type="xs:string"/>
+    <xs:element name="utca" type="xs:string"/>
+    <xs:element name="hsz" type="xs:string"/>
+    <xs:element name="fid" type="xs:integer"/>
+    <xs:element name="megnevezes" type="xs:string"/>
+    <xs:element name="helyettesit-e" type="xs:integer"/>
+    <xs:element name="ismeretek" type="xs:string"/>
+    <xs:element name="ugykor" type="xs:string"/>
+    <xs:element name="did" type="xs:integer"/>
+    <xs:element name="aid" type="xs:integer"/>
+    <xs:element name="belepes" type="xs:dateTime"/>
+    <xs:element name="kilepes" type="xs:dateTime"/>
+    <xs:element name="uid" type="xs:integer"/>
+    <xs:element name="ugyfel" type="ugyfelTípus"/>
+    <xs:element name="felettes" type="felettesTípus"/>
+    <xs:element name="dolgozo" type="dolgozoTípus"/>
+    <xs:element name="munkakorok" type="munkakorokTípus"/>
+    <xs:element name="szerep" type="szerepTípus"/>
+    <xs:element name="munkakor_ism" type="munkakor_ismTípus"/>
+    <xs:element name="ablak" type="ablakTípus"/>
+
+    <xs:simpleType name="helyettesit-eTípus">
+        <xs:restriction base="xs:integer">
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Összetett típusok: -->
+
+    <xs:complexType name="ugyfelTípus">
+        <xs:sequence>
+            <xs:element name="szig" type="xs:string"/>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="szulido" type="xs:string"/>
+            <xs:element name="irsz" type="xs:string"/>
+            <xs:element name="varos" type="xs:string"/>
+            <xs:element name="utca" type="xs:string"/>
+            <xs:element name="hsz" type="xs:string"/>
+            <xs:element ref="belepes"/>
+            <xs:element ref="kilepes"/>
+        </xs:sequence>
+        <xs:attribute name="uid" type="xs:integer"/>
+        <xs:attribute name="aid" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="felettesTípus">
+        <xs:sequence>
+            <xs:element name="szig" type="xs:string"/>
+            <xs:element name="nev" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="fid" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="dolgozoTípus">
+        <xs:sequence>
+            <xs:element name="szig" type="xs:string"/>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="szulido" type="xs:string"/>
+            <xs:element name="irsz" type="xs:string"/>
+            <xs:element name="varos" type="xs:string"/>
+            <xs:element name="utca" type="xs:string"/>
+            <xs:element name="hsz" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="did" type="xs:integer"/>
+        <xs:attribute name="fid" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="munkakorokTípus">
+        <xs:sequence>
+            <xs:element name="megnevezes"  type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="mid" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="szerepTípus">
+    	<xs:sequence>
+        	<xs:element name="helyettesit-e" type="xs:string"/>
+    	</xs:sequence>
+    	<xs:attribute name="did" type="xs:integer"/>
+    	<xs:attribute name="mid" type="xs:integer"/>
+	</xs:complexType>
+
+    <xs:complexType name="munkakor_ismTípus">
+        <xs:sequence>
+            <xs:element ref="ismeretek"/>
+        </xs:sequence>
+        <xs:attribute name="mid" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="ablakTípus">
+        <xs:sequence>
+            <xs:element name="ugykor" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="aid" type="xs:integer"/>
+        <xs:attribute name="did" type="xs:integer"/>
+    </xs:complexType>
+
+    <!-- Gyökérelem: -->
     <xs:element name="V1C6ND_okmanyiroda">
         <xs:complexType>
             <xs:sequence>
-
-                <!-- DOLGOZÓK -->
-                <xs:element name="dolgozo" type="dolgozotype" minOccurs="1" maxOccurs="unbounded"/>
-
-                <!-- MUNKAKÖRÖK -->
-                <xs:element name="munkakorok" type="munkakoroktype" minOccurs="1" maxOccurs="unbounded"/>
-
-                <!-- SZEREP -->
-                <xs:element name="szerep" type="szereptype" minOccurs="1" maxOccurs="unbounded"/>
-  
-                <!-- MUNKAKÖR ISMERETEK -->
-                <xs:element name="munkakor_ism" type="munkakor_ismtype" minOccurs="1" maxOccurs="unbounded"/>
-
-                <!-- ABLAK -->
-                <xs:element name="ablak" type="ablaktype" minOccurs="1" maxOccurs="unbounded"/>
-
-                <!-- ÜGYFÉL -->
-                <xs:element name="ugyfel" type="ugyfeltype" minOccurs="1" maxOccurs="unbounded"/>
-
-                <!-- FELETTES -->
-                <xs:element name="felettes" type="felettestype" minOccurs="1" maxOccurs="unbounded"/>
-
+                <xs:element name="dolgozo" type="dolgozoTípus" maxOccurs="unbounded"/>
+                <xs:element name="munkakorok" type="munkakorokTípus" maxOccurs="unbounded"/>
+                <xs:element name="szerep" type="szerepTípus" maxOccurs="unbounded"/>
+                <xs:element name="munkakor_ism" type="munkakor_ismTípus" maxOccurs="unbounded"/>
+                <xs:element name="ablak" type="ablakTípus" maxOccurs="unbounded"/>
+                <xs:element name="ugyfel" type="ugyfelTípus" maxOccurs="unbounded"/>
+                <xs:element name="felettes" type="felettesTípus" maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>
+
+        <!-- Saját kulcsok, idegen kulcsok: -->
+
+        <xs:key name="dolgozoPK">
+            <xs:selector xpath="dolgozo"/>
+            <xs:field xpath="@did"/>
+        </xs:key>
+
+        <xs:key name="munkakorokPK">
+            <xs:selector xpath="munkakorok"/>
+            <xs:field xpath="@mid"/>
+        </xs:key>
+
+        <xs:key name="szerepPK">
+            <xs:selector xpath="szerep"/>
+            <xs:field xpath="@did"/>
+            <xs:field xpath="@mid"/>
+        </xs:key>
+
+        <xs:key name="munkakor_ismPK">
+            <xs:selector xpath="munkakor_ism"/>
+            <xs:field xpath="@mid"/>
+        </xs:key>
+
+        <xs:key name="ablakPK">
+            <xs:selector xpath="ablak"/>
+            <xs:field xpath="@aid"/>
+        </xs:key>
+
+        <xs:key name="felettesPK">
+            <xs:selector xpath="felettes"/>
+            <xs:field xpath="@fid"/>
+        </xs:key>
+
+        <!-- Egy-több kapcsolatok: -->
+        <xs:keyref name="ugyfelFK" refer="ablakPK">
+            <xs:selector xpath="ugyfel"/>
+            <xs:field xpath="@aid"/>
+        </xs:keyref>
+
+        <xs:keyref name="dolgozoFK" refer="felettesPK">
+            <xs:selector xpath="dolgozo"/>
+            <xs:field xpath="@fid"/>
+        </xs:keyref>
+
+        <!-- Egy-egy kapcsolat: -->
+        <xs:unique name="dolgozoAblak" >
+            <xs:selector xpath="ablak"/>    
+            <xs:field xpath="@did"/>
+        </xs:unique>
+
+        <!-- Több-több kapcsolat: -->
+        <xs:keyref name="dolgozoSzerep" refer="dolgozoPK">
+            <xs:selector xpath="szerep"/>
+            <xs:field xpath="@did"/>
+        </xs:keyref>
+
+        <xs:keyref name="munkakorokSzerep" refer="munkakorokPK">
+            <xs:selector xpath="szerep"/>
+            <xs:field xpath="@mid"/>
+        </xs:keyref>
     </xs:element>
-
-    <!-- Komplex típusok definíciói -->
-
-    <!-- DOLGOZÓ típus -->
-    <xs:complexType name="dolgozotype">
-        <xs:sequence>
-            <xs:element name="szig" type="xs:string"/>
-            <xs:element name="nev" type="xs:string"/>
-            <xs:element name="szulido" type="xs:date"/>
-            <xs:element name="irsz" type="xs:string"/>
-            <xs:element name="varos" type="xs:string"/>
-            <xs:element name="utca" type="xs:string"/>
-            <xs:element name="hsz" type="xs:string"/>
-            <xs:element name="fid" type="xs:integer"/>
-        </xs:sequence>
-        <xs:attribute name="did" type="xs:integer" use="required"/>
-    </xs:complexType>
-
-    <!-- MUNKAKÖRÖK típus -->
-    <xs:complexType name="munkakoroktype">
-        <xs:sequence>
-            <xs:element name="megnevezes" type="xs:string"/>
-        </xs:sequence>
-        <xs:attribute name="mid" type="xs:integer" use="required"/>
-    </xs:complexType>
-
-    <!-- SZEREP típus -->
-    <xs:complexType name="szereptype">
-        <xs:sequence>
-            <xs:element name="helyettesit-e" type="xs:boolean"/>
-        </xs:sequence>
-        <xs:attribute name="did" type="xs:integer" use="required"/>
-        <xs:attribute name="mid" type="xs:integer" use="required"/>
-    </xs:complexType>
-
-    <!-- MUNKAKÖR ISMERETEK típus -->
-    <xs:complexType name="munkakor_ismtype">
-        <xs:sequence>
-            <xs:element name="ismeretek" type="xs:string"/>
-        </xs:sequence>
-        <xs:attribute name="mid" type="xs:integer" use="required"/>
-    </xs:complexType>
-
-    <!-- ABLAK típus -->
-    <xs:complexType name="ablaktype">
-        <xs:sequence>
-            <xs:element name="ugykor" type="xs:string"/>
-            <xs:element name="did" type="xs:integer"/>
-        </xs:sequence>
-        <xs:attribute name="aid" type="xs:integer" use="required"/>
-    </xs:complexType>
-
-    <!-- ÜGYFÉL típus -->
-    <xs:complexType name="ugyfeltype">
-        <xs:sequence>
-            <xs:element name="szig" type="xs:string"/>
-            <xs:element name="nev" type="xs:string"/>
-            <xs:element name="szulido" type="xs:date"/>
-            <xs:element name="irsz" type="xs:string"/>
-            <xs:element name="varos" type="xs:string"/>
-            <xs:element name="utca" type="xs:string"/>
-            <xs:element name="hsz" type="xs:string"/>
-            <xs:element name="aid" type="xs:integer"/>
-            <xs:element name="belepes" type="xs:dateTime"/>
-            <xs:element name="kilepes" type="xs:dateTime"/>
-        </xs:sequence>
-        <xs:attribute name="uid" type="xs:integer" use="required"/>
-    </xs:complexType>
-
-    <!-- FELETTES típus -->
-    <xs:complexType name="felettestype">
-        <xs:sequence>
-            <xs:element name="szig" type="xs:string"/>
-            <xs:element name="nev" type="xs:string"/>
-        </xs:sequence>
-        <xs:attribute name="fid" type="xs:integer" use="required"/>
-    </xs:complexType>
 
 </xs:schema>
