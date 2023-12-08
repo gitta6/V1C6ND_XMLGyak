@@ -12,7 +12,7 @@
     <xs:element name="fid" type="xs:integer"/>
     <xs:element name="megnevezes" type="xs:string"/>
     <xs:element name="helyettesit-e" type="xs:integer"/>
-    <xs:element name="ismeretek" type="xs:string"/>
+    <xs:element name="munkakor_ism" type="munkakor_ismTípus"/>
     <xs:element name="ugykor" type="xs:string"/>
     <xs:element name="did" type="xs:integer"/>
     <xs:element name="aid" type="xs:integer"/>
@@ -24,7 +24,6 @@
     <xs:element name="dolgozo" type="dolgozoTípus"/>
     <xs:element name="munkakorok" type="munkakorokTípus"/>
     <xs:element name="szerep" type="szerepTípus"/>
-    <xs:element name="munkakor_ism" type="munkakor_ismTípus"/>
     <xs:element name="ablak" type="ablakTípus"/>
 
     <xs:simpleType name="helyettesit-eTípus">
@@ -91,7 +90,7 @@
 
     <xs:complexType name="munkakor_ismTípus">
         <xs:sequence>
-            <xs:element ref="ismeretek"/>
+            <xs:element name="ismeretek" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
         <xs:attribute name="mid" type="xs:integer"/>
     </xs:complexType>

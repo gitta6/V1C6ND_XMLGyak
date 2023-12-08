@@ -36,13 +36,16 @@
      <munkakorok mid="3">
           <megnevezes>CSOK ügyintéző</megnevezes>
      </munkakorok>
+     <munkakorok mid="3">
+          <megnevezes>pályázati ügyintéző</megnevezes>
+     </munkakorok>
      <szerep did="1" mid="2">
           <helyettesit-e>0</helyettesit-e>
      </szerep>
      <szerep did="1" mid="3">
           <helyettesit-e>0</helyettesit-e>
      </szerep>
-     <szerep did="1" mid="8">
+     <szerep did="1" mid="4">
           <helyettesit-e>0</helyettesit-e>
      </szerep>
      <szerep did="2" mid="1">
@@ -51,26 +54,27 @@
      <szerep did="3" mid="4">
           <helyettesit-e>0</helyettesit-e>
      </szerep>
-     <szerep did="3" mid="5">
+     <szerep did="3" mid="2">
           <helyettesit-e>0</helyettesit-e>
      </szerep>
      <munkakor_ism mid="1">
           <ismeretek>adóbevallás kezelése</ismeretek>
-     </munkakor_ism>
-     <munkakor_ism mid="1">
           <ismeretek>adózási ismeretek</ismeretek>
      </munkakor_ism>
-     <munkakor_ism mid="1">
+     <munkakor_ism mid="2">
           <ismeretek>MS Office ismeretek</ismeretek>
-     </munkakor_ism>
-     <munkakor_ism mid="2">
+          <ismeretek>forgalmi engedély kezelése</ismeretek>
           <ismeretek>adásvételi szerződés kezelése</ismeretek>
-     </munkakor_ism>
-     <munkakor_ism mid="2">
           <ismeretek>törzskönyv kezelése</ismeretek>
      </munkakor_ism>
-     <munkakor_ism mid="2">
-          <ismeretek>forgalmi engedély kezelése</ismeretek>
+     <munkakor_ism mid="3">
+          <ismeretek>MS Office ismeretek</ismeretek>
+          <ismeretek>jogi ismeretek</ismeretek>
+          <ismeretek>számviteli ismeretek</ismeretek>
+     </munkakor_ism>
+     <munkakor_ism mid="4">
+          <ismeretek>MS Office ismeretek</ismeretek>
+          <ismeretek>jogi ismeretek</ismeretek>
      </munkakor_ism>
      <ablak aid="1" did="2">
           <ugykor>adóbevallás</ugykor>

@@ -14,6 +14,7 @@ import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 public class DOMWriteV1C6ND {
@@ -45,22 +46,28 @@ public class DOMWriteV1C6ND {
         rootElement.appendChild(createMunkakorok(outputDocument, "1", "NAV ügyintéző"));
         rootElement.appendChild(createMunkakorok(outputDocument, "2", "gépjármű ügyintéző"));
         rootElement.appendChild(createMunkakorok(outputDocument, "3", "CSOK ügyintéző"));
+        rootElement.appendChild(createMunkakorok(outputDocument, "3", "pályázati ügyintéző"));
 
         // Szerep elemek:
         rootElement.appendChild(createSzerep(outputDocument, "1", "2", "0"));
         rootElement.appendChild(createSzerep(outputDocument, "1", "3", "0"));
-        rootElement.appendChild(createSzerep(outputDocument, "1", "8", "0"));
+        rootElement.appendChild(createSzerep(outputDocument, "1", "4", "0"));
         rootElement.appendChild(createSzerep(outputDocument, "2", "1", "1"));
         rootElement.appendChild(createSzerep(outputDocument, "3", "4", "0"));
-        rootElement.appendChild(createSzerep(outputDocument, "3", "5", "0"));
+        rootElement.appendChild(createSzerep(outputDocument, "3", "2", "0"));
 
         // Munkakör ismeretek elemek:
         rootElement.appendChild(createMunkakorIsm(outputDocument, "1", "adóbevallás kezelése"));
         rootElement.appendChild(createMunkakorIsm(outputDocument, "1", "adózási ismeretek"));
-        rootElement.appendChild(createMunkakorIsm(outputDocument, "1", "MS Office ismeretek"));
+        rootElement.appendChild(createMunkakorIsm(outputDocument, "2", "MS Office ismeretek"));
+        rootElement.appendChild(createMunkakorIsm(outputDocument, "2", "forgalmi engedély kezelése"));
         rootElement.appendChild(createMunkakorIsm(outputDocument, "2", "adásvételi szerződés kezelése"));
         rootElement.appendChild(createMunkakorIsm(outputDocument, "2", "törzskönyv kezelése"));
-        rootElement.appendChild(createMunkakorIsm(outputDocument, "2", "forgalmi engedély kezelése"));
+        rootElement.appendChild(createMunkakorIsm(outputDocument, "3", "MS Office ismeretek"));
+        rootElement.appendChild(createMunkakorIsm(outputDocument, "3", "jogi ismeretek"));
+        rootElement.appendChild(createMunkakorIsm(outputDocument, "3", "számviteli ismeretek"));
+        rootElement.appendChild(createMunkakorIsm(outputDocument, "4", "MS Office ismeretek"));
+        rootElement.appendChild(createMunkakorIsm(outputDocument, "4", "jogi ismeretek"));
 
         // Ablak elemek:
         rootElement.appendChild(createAblak(outputDocument, "1", "adóbevallás", "2"));
@@ -166,19 +173,27 @@ public class DOMWriteV1C6ND {
     }
 
     private static Node createMunkakorIsm(Document outputDocument, String mid, String ismeretek) {
-        Element munkakorIsm = outputDocument.createElement("munkakor_ism");
+        // Az tulajdonság többértékűsége miatt van szükség erre a metódusra:
+        Element munkakorIsm = findMunkakorIsmElement(outputDocument, mid);
 
-        munkakorIsm.setAttribute("mid", mid);
-        munkakorIsm.appendChild(createMunkakorIsmElement(outputDocument, "ismeretek", ismeretek));
+        // Ellenőrizzük, hogy létezik-e már "munkakor_ism" elem a megadott "mid"
+        // azonosítóval:
+        if (munkakorIsm == null) {
+            munkakorIsm = outputDocument.createElement("munkakor_ism");
+            munkakorIsm.setAttribute("mid", mid);
+
+            // Az új "munkakor_ism" elem hozzáadásra kerül:
+            outputDocument.getDocumentElement().appendChild(munkakorIsm);
+        }
+
+        // Létrehozunk egy új "ismeretek" elemet és beállítjuk annak tartalmát:
+        Element ismeretekElement = outputDocument.createElement("ismeretek");
+        ismeretekElement.setTextContent(ismeretek);
+
+        // Hozzáadjuk a "munkakor_ism" elemhez:
+        munkakorIsm.appendChild(ismeretekElement);
 
         return munkakorIsm;
-    }
-
-    private static Node createMunkakorIsmElement(Document outputDocument, String name, String value) {
-        Element node = outputDocument.createElement(name);
-        node.appendChild(outputDocument.createTextNode(value));
-
-        return node;
     }
 
     private static Node createAblak(Document outputDocument, String aid, String ugykor, String did) {
@@ -239,5 +254,21 @@ public class DOMWriteV1C6ND {
         node.appendChild(outputDocument.createTextNode(value));
 
         return node;
+    }
+
+    private static Element findMunkakorIsmElement(Document outputDocument, String mid) {
+        // Az összes "munkakor_ism" elem megkeresése a dokumentumból:
+        NodeList munkakorIsmList = outputDocument.getElementsByTagName("munkakor_ism");
+
+        for (int i = 0; i < munkakorIsmList.getLength(); i++) {
+            Element munkakorIsmElement = (Element) munkakorIsmList.item(i);
+
+            // Ellenőrzés: az elem "mid" attribútuma megegyezik a keresett "mid"-del?
+            if (munkakorIsmElement.getAttribute("mid").equals(mid)) {
+                // Ha igen, visszaadjuk az elemet:
+                return munkakorIsmElement;
+            }
+        }
+        return null;
     }
 }

@@ -86,28 +86,27 @@
 
     <!-- MUNKAKÖR ISMERETEK -->
 
-    <munkakor_ism mid="1">
+    <munkakor_ism mid="1"> 
         <ismeretek>adóbevallás kezelése</ismeretek>
-    </munkakor_ism>
-
-    <munkakor_ism mid="2">
         <ismeretek>adózási ismeretek</ismeretek>
     </munkakor_ism>
 
-    <munkakor_ism mid="3">
+    <munkakor_ism mid="2"> 
         <ismeretek>MS Office ismeretek</ismeretek>
-    </munkakor_ism>
-
-    <munkakor_ism mid="4">
+        <ismeretek>forgalmi engedély kezelése</ismeretek>
         <ismeretek>adásvételi szerződés kezelése</ismeretek>
-    </munkakor_ism>
-
-    <munkakor_ism mid="5">
         <ismeretek>törzskönyv kezelése</ismeretek>
     </munkakor_ism>
 
-    <munkakor_ism mid="6">
-        <ismeretek>forgalmi engedély kezelése</ismeretek>
+    <munkakor_ism mid="3"> 
+        <ismeretek>MS Office ismeretek</ismeretek>
+        <ismeretek>jogi ismeretek</ismeretek>
+        <ismeretek>számviteli ismeretek</ismeretek>
+    </munkakor_ism>
+        
+    <munkakor_ism mid="4">
+        <ismeretek>MS Office ismeretek</ismeretek>
+        <ismeretek>jogi ismeretek</ismeretek>
     </munkakor_ism>
 
     <!-- további munkakor_ism elemek -->

@@ -122,16 +122,22 @@ public class DOMReadV1C6ND {
             if (node.getNodeType() == Node.ELEMENT_NODE) {
                 Element el = (Element) node;
                 String mid = el.getAttribute("mid");
-                String ismeretek = el.getElementsByTagName("ismeretek").item(0).getTextContent();
-
-                // Kiíratás konzolra:
                 System.out.println("    <munkakor_ism mid=\"" + mid + "\">");
-                printElement("ismeretek", ismeretek);
+    
+                // Többértékű tulajdonság, így ki kell írni minden példányát:
+                NodeList ismeretekList = el.getElementsByTagName("ismeretek");
+                for (int j = 0; j < ismeretekList.getLength(); j++) {
+                    Node ismeretekNode = ismeretekList.item(j);
+                    if (ismeretekNode.getNodeType() == Node.ELEMENT_NODE) {
+                        String ismeret = ismeretekNode.getTextContent();
+                        printElement("ismeretek", ismeret);
+                    }
+                }
                 System.out.println("    </munkakor_ism>");
             }
         }
     }
-
+    
     // Ablakok beolvasása:
     private static void readAblakok(Document document) {
         NodeList ablakList = document.getElementsByTagName("ablak");
