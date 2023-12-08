@@ -1,4 +1,4 @@
-package V1C6ND_beadando.DOMParseV1C6ND.src.hu.domparse;
+package XMLTaskV1C6ND.DOMParseV1C6ND.src.hu.domparse;
 
 import org.xml.sax.SAXException;
 import java.io.File;
@@ -18,7 +18,7 @@ public class DOMReadV1C6ND {
         DocumentBuilder documentBuilder = factory.newDocumentBuilder();
 
         // XML fájl beolvasása és dokumentummá alakítása:
-        Document inputDocument = documentBuilder.parse(new File("V1C6ND_beadando\\\\XMLV1C6ND.xml"));
+        Document inputDocument = documentBuilder.parse(new File("XMLTaskV1C6ND\\\\XMLV1C6ND.xml"));
 
         // A bemeneti fájl normalizálása:
         inputDocument.getDocumentElement().normalize();

@@ -1,4 +1,4 @@
-package V1C6ND_beadando.DOMParseV1C6ND.src.hu.domparse;
+package XMLTaskV1C6ND.DOMParseV1C6ND.src.hu.domparse;
 
 import java.io.File;
 import java.io.IOException;
@@ -20,7 +20,7 @@ public class DOMWriteV1C6ND {
 
     public static void main(String[] args)
             throws ParserConfigurationException, SAXException, IOException, TransformerException {
-        File outFile = new File("V1C6ND_beadando\\XMLV1C6ND1.xml");
+        File outFile = new File("XMLTaskV1C6ND\\XMLV1C6ND1.xml");
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder docBuilder = factory.newDocumentBuilder();
