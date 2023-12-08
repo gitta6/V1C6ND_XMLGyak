@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <V1C6ND_okmanyiroda xmlns="XMLV1C6ND">
-     <dolgozo did="1">
+     <dolgozo did="1" fid="1">
           <szig>14725AE</szig>
           <nev>Tóth Erzsébet</nev>
           <szulido>1985-07-11</szulido>
@@ -8,9 +8,8 @@
           <varos>Eger</varos>
           <utca>Széchenyi út</utca>
           <hsz>2</hsz>
-          <fid>1</fid>
      </dolgozo>
-     <dolgozo did="2">
+     <dolgozo did="2" fid="2">
           <szig>65815FV</szig>
           <nev>Nagy Zsigmond</nev>
           <szulido>1970-01-05</szulido>
@@ -18,9 +17,8 @@
           <varos>Miskolc</varos>
           <utca>Kossuth utca</utca>
           <hsz>36A</hsz>
-          <fid>2</fid>
      </dolgozo>
-     <dolgozo did="3">
+     <dolgozo did="3" fid="2">
           <szig>148575UK</szig>
           <nev>Kovács Levente</nev>
           <szulido>1995-12-08</szulido>
@@ -28,7 +26,6 @@
           <varos>Mályi</varos>
           <utca>Petőfi út</utca>
           <hsz>50</hsz>
-          <fid>2</fid>
      </dolgozo>
      <munkakorok mid="1">
           <megnevezes>NAV ügyintéző</megnevezes>

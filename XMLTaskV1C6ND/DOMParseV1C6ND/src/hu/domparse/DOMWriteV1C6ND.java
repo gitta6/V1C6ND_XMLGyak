@@ -109,6 +109,7 @@ public class DOMWriteV1C6ND {
         Element dolgozo = outputDocument.createElement("dolgozo");
 
         dolgozo.setAttribute("did", did);
+        dolgozo.setAttribute("fid", fid);
         dolgozo.appendChild(createDolgozoElement(outputDocument, "szig", szig));
         dolgozo.appendChild(createDolgozoElement(outputDocument, "nev", nev));
         dolgozo.appendChild(createDolgozoElement(outputDocument, "szulido", szulido));
@@ -116,7 +117,6 @@ public class DOMWriteV1C6ND {
         dolgozo.appendChild(createDolgozoElement(outputDocument, "varos", varos));
         dolgozo.appendChild(createDolgozoElement(outputDocument, "utca", utca));
         dolgozo.appendChild(createDolgozoElement(outputDocument, "hsz", hsz));
-        dolgozo.appendChild(createDolgozoElement(outputDocument, "fid", fid));
 
         return dolgozo;
     }
@@ -185,8 +185,8 @@ public class DOMWriteV1C6ND {
         Element ablak = outputDocument.createElement("ablak");
 
         ablak.setAttribute("aid", aid);
-        ablak.appendChild(createAblakElement(outputDocument, "ugykor", ugykor));
         ablak.setAttribute("did", did);
+        ablak.appendChild(createAblakElement(outputDocument, "ugykor", ugykor));
 
         return ablak;
     }
@@ -203,6 +203,7 @@ public class DOMWriteV1C6ND {
         Element ugyfel = outputDocument.createElement("ugyfel");
 
         ugyfel.setAttribute("uid", uid);
+        ugyfel.setAttribute("aid", aid);
         ugyfel.appendChild(createUgyfelElement(outputDocument, "szig", szig));
         ugyfel.appendChild(createUgyfelElement(outputDocument, "nev", nev));
         ugyfel.appendChild(createUgyfelElement(outputDocument, "szulido", szulido));
@@ -210,7 +211,6 @@ public class DOMWriteV1C6ND {
         ugyfel.appendChild(createUgyfelElement(outputDocument, "varos", varos));
         ugyfel.appendChild(createUgyfelElement(outputDocument, "utca", utca));
         ugyfel.appendChild(createUgyfelElement(outputDocument, "hsz", hsz));
-        ugyfel.setAttribute("aid", aid);
         ugyfel.appendChild(createUgyfelElement(outputDocument, "belepes", belepes));
         ugyfel.appendChild(createUgyfelElement(outputDocument, "kilepes", kilepes));
 

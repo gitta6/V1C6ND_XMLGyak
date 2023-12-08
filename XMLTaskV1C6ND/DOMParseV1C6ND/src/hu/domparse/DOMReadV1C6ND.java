@@ -64,7 +64,7 @@ public class DOMReadV1C6ND {
                 String fid = el.getAttribute("fid");
 
                 // Kiíratás konzolra:
-                System.out.println("    <dolgozo did=\"" + did + "\">");
+                System.out.println("    <dolgozo did=\"" + did + "\" fid=\"" + fid + "\" >");
                 printElement("szig", szig);
                 printElement("nev", nev);
                 printElement("szulido", szulido);
@@ -72,7 +72,6 @@ public class DOMReadV1C6ND {
                 printElement("varos", varos);
                 printElement("utca", utca);
                 printElement("hsz", hsz);
-                printElement("fid", fid);
                 System.out.println("    </dolgozo>");
             }
         }
@@ -145,9 +144,8 @@ public class DOMReadV1C6ND {
                 String did = el.getAttribute("did");
 
                 // Kiíratás konzolra:
-                System.out.println("    <ablak aid=\"" + aid + "\">");
+                System.out.println("    <ablak aid=\"" + aid + "\" did=\"" + did + "\">");
                 printElement("ugykor", ugykor);
-                printElement("did", did);
                 System.out.println("    </ablak>");
             }
         }
@@ -173,7 +171,7 @@ public class DOMReadV1C6ND {
                 String kilepes = el.getElementsByTagName("kilepes").item(0).getTextContent();
 
                 // Kiíratás konzolra:
-                System.out.println("    <ugyfel uid=\"" + uid + "\">");
+                System.out.println("    <ugyfel uid=\"" + uid + "\" aid=\"" + aid + "\">");
                 printElement("szig", szig);
                 printElement("nev", nev);
                 printElement("szulido", szulido);
@@ -181,7 +179,6 @@ public class DOMReadV1C6ND {
                 printElement("varos", varos);
                 printElement("utca", utca);
                 printElement("hsz", hsz);
-                printElement("aid", aid);
                 printElement("belepes", belepes);
                 printElement("kilepes", kilepes);
                 System.out.println("    </ugyfel>");
