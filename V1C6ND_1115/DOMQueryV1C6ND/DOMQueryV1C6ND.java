@@ -93,7 +93,7 @@ public class DOMQueryV1C6ND {
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         Transformer transformer = transformerFactory.newTransformer();
         DOMSource source = new DOMSource(newDoc);
-        StreamResult result = new StreamResult(new File("V1C6ND_hallgato.xml"));
+        StreamResult result = new StreamResult(new File("V1C6ND_1115\\V1C6ND_hallgato.xml"));
         transformer.transform(source, result);
 
         NodeList oktatoNodeList = inputDocument.getElementsByTagName("oktato");

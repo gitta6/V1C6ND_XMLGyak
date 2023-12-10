@@ -1,4 +1,4 @@
-package V1C6ND;
+package V1C6ND_1206.JSONParseV1C6ND.src.V1C6ND;
 
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -8,9 +8,9 @@ import java.io.Reader;
 import org.json.simple.parser.JSONParser;
 import org.jcp.xml.dsig.internal.dom.DOMXMLObject;
 import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
+import org.json.simple.JSONObject; 
 
-public class JSONwriteV1C6ND {
+public class JSONWriteV1C6ND {
 	public static void main(String[] args) {
 		
 		JSONObject root = new DOMXMLObject();
@@ -21,7 +21,7 @@ public class JSONwriteV1C6ND {
 		JSONObject orarend = new JSONObject();
 		JSONArray ora = new JSONArray();
 		
-		// 1.
+		// 1. óra:
 		JSONObject ora1 = new JSONObject();
         ora1.put("id", "1");
         ora1.put("tipus", "eloadas");        
@@ -36,7 +36,7 @@ public class JSONwriteV1C6ND {
 		ora1.put("szak", "BGI");
 		ora.add(ora1);
 		
-		// 2.
+		// 2. óra:
 		JSONObject ora2 = new JSONObject();
 		ora2.put("id", "2");
         ora2.put("tipus", "gyakorlat");        
@@ -51,7 +51,7 @@ public class JSONwriteV1C6ND {
 		ora2.put("szak", "BGI");
 		ora.add(ora2);
 		
-		// 3.
+		// 3. óra:
 		JSONObject ora3 = new JSONObject();
         ora3.put("id", "3");
         ora3.put("tipus", "eloadas");
@@ -66,7 +66,7 @@ public class JSONwriteV1C6ND {
 		ora3.put("szak", "BGI");
 		ora.add(ora3);
 		
-		// 4.
+		// 4. óra:
 		JSONObject ora4 = new JSONObject();
         ora4.put("id", "4");
         ora4.put("tipus", "gyakorlat");
@@ -81,7 +81,7 @@ public class JSONwriteV1C6ND {
 		ora4.put("szak", "BGI");
 		ora.add(ora4);
 		
-		// 5.
+		// 5. óra:
        	JSONObject ora5 = new JSONObject();
         ora3.put("id", "5");
         ora3.put("tipus", "eloadas");
@@ -101,7 +101,6 @@ public class JSONwriteV1C6ND {
 		
 		String jsonText = root.toString();
         System.out.println(jsonText);
-	
 		try {
 	        FileWriter file = new FileWriter("orarendV1C6ND1.json");
 	        file.write(jsonText);

@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>JSON Parser V1C6ND</title>
+    <meta charset="utf-8" />
+</head>
+
+<body style="background-color: peachpuff">
+    <h1>G3BGI Órarend</h1>
+    <div id="data"></div>
+    <div>Válasszon JSON fájlt!</div>
+    <input type="file" accept=".json" id="inputFile">
+</body>
+<script>
+
+    const dataDiv = document.getElementById("data");
+    const fileInput = document.getElementById("inputFile");
+
+    function handleFileSelect(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const json = e.target.result;
+                writeData(json);
+            };
+            reader.readAsText(file);
+        }
+    }
+
+    function writeData(json) {
+        try {
+            dataDiv.innerHTML = "";
+            const object = JSON.parse(json);
+            const array = object.V1C6ND_orarend.ora;
+            for (let i = 0; i < array.length; i++) {
+                let child = document.createElement("div")
+                child.innerHTML = "<span style='color:green; font-size: larger;'>Tárgy:</span><span> " + array[i].kurzusnev + "</span>";
+                dataDiv.appendChild(child);
+
+                child = document.createElement("div")
+                child.innerText = "ID: " + array[i].id;
+                dataDiv.appendChild(child);
+
+                child = document.createElement("div")
+                child.innerText = "Időpont: " + array[i].idopont.nap + " " + array[i].idopont.kezdes + "-" + array[i].idopont.befejezes;
+                dataDiv.appendChild(child);
+
+                child = document.createElement("div")
+                child.innerText = "Helyszín: " + array[i].hely;
+                dataDiv.appendChild(child);
+
+                child = document.createElement("div")
+                child.innerText = "Oktató: " + array[i].oktato;
+                dataDiv.appendChild(child);
+
+                child = document.createElement("div")
+                child.innerHTML = "<p style='margin-top:0px;'>Szak: " + array[i].szak + "</p>";
+                dataDiv.appendChild(child);
+            }
+        } catch (error) {
+            console.log(error)
+            let child = document.createElement("div");
+            child.innerHTML = "<p style='color:red'>Válasszon egy érvényes JSON fájlt!</p>";
+            dataDiv.appendChild(child);
+        }
+    }
+    let jsonV1C6NDorarend = '{"V1C6ND_orarend":{"ora":[{"id":"1","tipus":"eloadas","kurzusnev":"Adatkezeles XML-ben","idopont":{"nap":"Kedd","kezdes":"12","befejezes":"14"},"hely":"XXXII. eloado","oktato":"Dr. Bednarik Laszlo","szak":"BGI"},{"id":"2","tipus":"gyakolat","kurzusnev":"Adatkezeles XML-ben","idopont":{"nap":"Szerda","kezdes":"10","befejezes":"12"},"hely":"Inf101","oktato":"Dr. Bednarik Laszlo","szak":"BGI"},{"id":"3","tipus":"eloadas","kurzusnev":"Mesterseges Intelligencia alapjai","idopont":{"nap":"Kedd","kezdes":"10","befejezes":"12"},"hely":"XXXII. eloado","oktato":"Kunne Dr. Tamas Judit","szak":"BGI"},{"id":"4","tipus":"gyakorlat","kurzusnev":"Mesterseges Intelligencia alapjai","idopont":{"nap":"Csutortok","kezdes":"10","befejezes":"12"},"hely":"I. eloado","oktato":"Fazekas Levente","szak":"BGI"},{"id":"5","tipus":"eloadas","kurzusnev":"Penzugytan","idopont":{"nap":"Hetfo","kezdes":"10","befejezes":"12"},"hely":"XXXVII. eloado","oktato":"Dr. Bozsik Sandor","szak":"BGI"},{"id":"6","tipus":"gyakorlat","kurzusnev":"Penzugytan","idopont":{"nap":"Szerda","kezdes":"8","befejezes":"10"},"hely":"A1-204","oktato":"Dr. Suveges Gabor","szak":"BGI"},{"id":"7","tipus":"eloadas","kurzusnev":"WEB technologiak","idopont":{"nap":"Hetfo","kezdes":"14","befejezes":"16"},"hely":"XXX. eloado","oktato":"Dr. Agardi Anita","szak":"BGI"},{"id":"8","tipus":"gyakorlat","kurzusnev":"WEB technologiak","idopont":{"nap":"Hetfo","kezdes":"16","befejezes":"18"},"hely":"Inf202","oktato":"Dr. Agardi Anita","szak":"BGI"},{"id":"9","tipus":"eloadas","kurzusnev":"Szamvitel","idopont":{"nap":"Kedd","kezdes":"8","befejezes":"10"},"hely":"VIII. eloado","oktato":"Dr. Pal Tibor","szak":"BGI"},{"id":"10","tipus":"gyakorlat","kurzusnev":"Szamvitel","idopont":{"nap":"Szerda","kezdes":"12","befejezes":"14"},"hely":"XII. eloado","oktato":"Varkonyine Dr. Juhasz Maria","szak":"BGI"},{"id":"11","tipus":"elmelet","kurzusnev":"Vallalati informacios rendszerek fejlesztese","idopont":{"nap":"Szerda","kezdes":"14","befejezes":"16"},"hely":"Inf101","oktato":"Dr. Sasvari Peter Laszlo","szak":"BGI"},{"id":"12","tipus":"elmelet","kurzusnev":"Termelesmenedzsment","idopont":{"nap":"Szerda","kezdes":"16","befejezes":"18"},"hely":"XXXVII. eloado","oktato":"Dr. Berenyi Laszlo","szak":"BGI"},{"id":"13","tipus":"gyakorlat","kurzusnev":"Vallalati informacios rendszerek fejlesztese","idopont":{"nap":"Szerda","kezdes":"18","befejezes":"20"},"hely":"Inf101","oktato":"Dr. Sasvari Peter Laszlo","szak":"BGI"}]}}';
+    writeData(jsonV1C6NDorarend);
+    fileInput.addEventListener("change", handleFileSelect);
+</script>
+
+</html>
