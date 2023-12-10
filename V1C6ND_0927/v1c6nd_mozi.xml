@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mozi SYSTEM "V1C6ND_mozi.dtd">
+
 <mozi>
-    <film id="1" mufaj="horror">
-        <rendezo id="2" nev="alex"/>
-        <szinesz id="3" nev="Madison_Ivy"/>
-        <iro id="4"/>
+    <film id="txn_nxm_2jb" mufaj="horror">
+        <rendezo id="nzk_4xm_2jb" nev="alex"/>
+        <szinesz id="u5q_4xm_2jb" nev="Madyson_Ivy"/>
+        <iro id="trv_4xm_2jb"/>
     </film>
 </mozi>

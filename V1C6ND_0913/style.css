@@ -1,0 +1,49 @@
+body
+{
+    background-color: rgb(238, 171, 156);
+    font: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cimsor
+{
+    text-align: center;
+    width: 100%;
+}
+
+img
+{
+    width: 30%;
+    height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3cm;
+    border-color: black;
+    border-radius: 10%;
+}
+
+.tartalom
+{
+    font-weight: normal;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.cim
+{
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+}
+.kep
+{
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3cm;
+    border-color: black;
+    border-radius: 10%;
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fesztival xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNameSpaceSchemaLocation="XMLSchemafesztivalV1C6ND.xsd">
+
+    <fesztival fkod="f1">
+        <nev>Mezőnyárádi Béka- és Hal Sütő-főző fesztivál</nev>
+        <helyszin>
+            <telepules>Mezőnyárád</telepules>
+            <terulet>Általános iskola parkja</terulet>
+        </helyszin>
+    </fesztival>
+    
+    <fesztival fkod="f2">
+        <nev>KOLORFeszt</nev>
+        <helyszin>
+            <telepules>Kazincbarcika</telepules>
+            <terulet>Főtér</terulet>
+        </helyszin>
+    </fesztival>
+
+    <alkalmazott akod="a1" f_a="f1">
+        <nev>Piros Rózsa</nev>
+        <kozvelemeny>Pozitív</kozvelemeny>
+    </alkalmazott>
+    
+    <alkalmazott akod="a2" f_a="f2">
+        <nev>Tóth Tamás</nev>
+        <kozvelemeny>Semleges</kozvelemeny>
+    </alkalmazott>
+
+    <fellepo fkod="fl1" flkod="f1">
+        <nev>Nagy Feró</nev>
+        <mufaj>Rock</mufaj>
+    </fellepo>
+    
+    <fellepo fkod="fl2" flkod="f2">
+        <nev>Avicii</nev>
+        <mufaj>Pop</mufaj>
+    </fellepo>
+
+    <tulajdonos tkod="t1" f_t="f1">
+        <nev>Kiss Károly</nev>
+        <alapitas>2006.12.02</alapitas>
+    </tulajdonos>
+    
+    <tulajdonos tkod="t2" f_t="f2">
+        <nev>Nagy Anna</nev>
+        <alapitas>1995.06.05</alapitas>
+    </tulajdonos>
+
+    <bar bkod="b1" f_t="f1">
+        <nev>Papó Sörözője</nev>
+        <ital>Kőbányai</ital>
+    </bar>
+    
+    <bar bkod="b2" f_t="f2">
+        <nev>Névtelen Bár</nev>
+        <ital>Gintonic</ital>
+    </bar>
+
+    <kozvelemeny kkod="k1" f_t="f1">
+        <kerdezo>Papó Sörözője</kerdezo>
+    </kozvelemeny>
+    
+    <kozvelemeny kkod="k2" f_t="f2">
+        <kerdezo>Névtelen Bár</kerdezo>
+    </kozvelemeny>
+
+    <nyelvtudas nykod="ny1" f_t="f1">
+        <nyelv>Angol</nyelv>
+        <szint>B2</szint>
+    </nyelvtudas>
+    
+    <nyelvtudas nykod="ny2" f_t="f2">
+        <nyelv>Orosz</nyelv>
+        <szint>C1</szint>
+    </nyelvtudas>
+
+    <resztvevo rkod="r1" f_r="f1">
+        <nev>Kis Zsolt</nev>
+        <telepules>Sajószentpéter</telepules>
+        <diakigazolvany>55048564</diakigazolvany>
+    </resztvevo>
+    
+    <resztvevo rkod="r2" f_r="f2">
+        <nev>Nagy Emese</nev>
+        <telepules>Eger</telepules>
+        <diakigazolvany>46358821</diakigazolvany>
+    </resztvevo>
+
+</fesztival>

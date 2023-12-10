@@ -1,0 +1,8 @@
+<!ELEMENT V1C6ND_orarend (ora)>
+<!ELEMENT ora (kurzusnev, idopont, hely, oktato, szak)>
+<!ATTLIST ora id ID #REQUIRED tipus CDATA "elmelet | gyakolat">
+    <!ELEMENT kurzusnev (#PCDATA)>
+    <!ELEMENT idopont (#PCDATA)>
+    <!ELEMENT hely (#PCDATA)>
+    <!ELEMENT oktato (#PCDATA)>
+    <!ELEMENT szak (#PCDATA)>

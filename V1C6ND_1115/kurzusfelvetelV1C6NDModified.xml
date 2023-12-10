@@ -1,9 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!DOCTYPE V1C6ND_kurzusfelvetel">
-
-<V1C6ND_kurzusfelvetel tanev="2023_2024 I." egyetem="ME">
-  <hallgato id="V1C6ND">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<V1C6ND_kurzusfelvetel egyetem="ME" tanev="2023_2024 I.">
+  <hallgato id="V1C6ND.ME">
     <hnev>Potoczki Gitta</hnev>
     <szulev>2003-01-24</szulev>
     <szak evf="5"> Gazdasaginformatikus </szak>
@@ -17,7 +14,7 @@
       <idopont>Szerda 10:00-12:00</idopont>
       <oktato>Dr. Bozsik sandor</oktato>
     </kurzus>
-    <kurzus id="GEIAL331-B" nyelv="magyar">
+    <kurzus id="GEIAL331-B" nyelv="angol">
       <kurzusnev>WEB technologiak 1</kurzusnev>
       <kredit>5</kredit>
       <hely>A1/305</hely>
@@ -53,4 +50,4 @@
       <oktato>Dr. Bednarik Laszlo</oktato>
     </kurzus>
   </kurzusok>
-</v1c6nd_kurzusfelvetel>
+</V1C6ND_kurzusfelvetel>

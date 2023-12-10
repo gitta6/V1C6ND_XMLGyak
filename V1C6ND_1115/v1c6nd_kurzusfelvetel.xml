@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE V1C6ND_kurzusfelvetel">
+<!DOCTYPE V1C6ND_kurzusfelvetel>
 
 <V1C6ND_kurzusfelvetel tanev="2023_2024 I." egyetem="ME">
-  <hallgato id="V1C6ND">
+  <hallgato id="V1C6ND.ME">
     <hnev>Potoczki Gitta</hnev>
     <szulev>2003-01-24</szulev>
     <szak evf="5"> Gazdasaginformatikus </szak>
@@ -53,4 +53,4 @@
       <oktato>Dr. Bednarik Laszlo</oktato>
     </kurzus>
   </kurzusok>
-</v1c6nd_kurzusfelvetel>
+</V1C6ND_kurzusfelvetel>

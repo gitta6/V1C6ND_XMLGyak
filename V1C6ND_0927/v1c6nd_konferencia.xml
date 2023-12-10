@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<konferencia>
+    <cim> XML Adatkezelés </cim>
+    <hallgatók>
+        <hallgató>
+            <név> Piros Rózsa </név>
+            <lakcím> Petőfi út 512. </lakcím>
+        </hallgató>
+        <hallgató>
+            <név> Fekete Péter </név>
+            <lakcím> Vass köz 1. </lakcím>
+        </hallgató>
+        <hallgató>
+            <név> Nagy Nándor </név>
+            <lakcím> Kossuth utca 102. </lakcím>
+        </hallgató>
+    </hallgatók>
+    <helyszín>
+       Miskolci Egyetem
+    </helyszín>
+    <előadó>
+        <név> Szabó Lajos </név>
+        <adószám> 584682451 </adószám>
+        <lakcím> Ady út 45. </lakcím>
+    </előadó>
+    <dátum> 2023. 09. 27. </dátum>
+</konferencia>
