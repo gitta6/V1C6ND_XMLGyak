@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hallgatoV1C6ND.xsl"?>
+<class>
+    <student id="01">
+        <vezeteknev>Potoczki</vezeteknev>
+        <keresztnev>Gitta</keresztnev>
+        <becenev>Gitta</becenev>
+        <kor>20</kor>
+        <osztondij>18000</osztondij>
+    </student>
+    <student id="02">
+        <vezeteknev>Szabó</vezeteknev>
+        <keresztnev>Laura</keresztnev>
+        <becenev>Lulu</becenev>
+        <kor>22</kor>
+        <osztondij>35000</osztondij>
+    </student>
+    <student id="03">
+        <vezeteknev>Nagy</vezeteknev>
+        <keresztnev>Tamás</keresztnev>
+        <becenev>Tomi</becenev>
+        <kor>21</kor>
+        <osztondij>21500</osztondij>
+    </student>
+</class>

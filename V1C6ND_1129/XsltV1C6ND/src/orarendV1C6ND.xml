@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<V1C6ND_orarend>
+    <ora id="1" tipus="elmelet">
+        <kurzusnev>Penzugytan</kurzusnev>
+        <idopont>
+            <nap>Hetfo</nap>
+            <kezdes>10:00</kezdes>
+            <befejezes>12:00</befejezes>
+        </idopont>
+        <helyszin>XXXVII. eloado</helyszin>
+        <oktato>Dr. Bozsik Sandor</oktato>
+        <szak>BGI</szak>
+    </ora>
+
+    <ora id="2" tipus="elmelet">
+        <kurzusnev>WEB Technologiak I</kurzusnev>
+        <idopont>
+            <nap>Hetfo</nap>
+            <kezdes>14:00</kezdes>
+            <befejezes>16:00</befejezes>
+        </idopont>
+        <helyszin>A1/305</helyszin>
+        <oktato>Agardi Anita</oktato>
+        <szak>BGI</szak>
+    </ora>
+
+    <ora id="3" tipus="gyakorlat">
+        <kurzusnev>WEB Technologiak I</kurzusnev>
+        <idopont>
+            <nap>Hetfo</nap>
+            <kezdes>16:00</kezdes>
+            <befejezes>18:00</befejezes>
+        </idopont>
+        <helyszin>Inf103</helyszin>
+        <oktato>Agardi Anita</oktato>
+        <szak>BGI</szak>
+    </ora>
+
+    <ora id="4" tipus="elmelet">
+        <kurzusnev>Szamvitel</kurzusnev>
+        <idopont>
+            <nap>Kedd</nap>
+            <kezdes>8:00</kezdes>
+            <befejezes>10:00</befejezes>
+        </idopont>
+        <helyszin>A1/115</helyszin>
+        <oktato>Dr. Pal Tibor</oktato>
+        <szak>BGI</szak>
+    </ora>
+
+    <ora id="5" tipus="elmelet">
+        <kurzusnev>Mesterseges intelligencia alapok</kurzusnev>
+        <idopont>
+            <nap>Kedd</nap>
+            <kezdes>10:00</kezdes>
+            <befejezes>12:00</befejezes>
+        </idopont>
+        <helyszin>XXXII. eloado</helyszin>
+        <oktato>Fazekas Levente Aron</oktato>
+        <szak>BGI</szak>
+    </ora>
+
+    <ora id="6" tipus="elmelet">
+        <kurzusnev>Adatkezeles XML-ben</kurzusnev>
+        <idopont>
+            <nap>Kedd</nap>
+            <kezdes>12:00</kezdes>
+            <befejezes>14:00</befejezes>
+        </idopont>
+        <helyszin>XXXII. eloado</helyszin>
+        <oktato>Dr. Bednarik Laszlo</oktato>
+        <szak>BGI</szak>
+    </ora>
+
+    <ora id="7" tipus="gyakorlat">
+        <kurzusnev>Penzugytan</kurzusnev>
+        <idopont>
+            <nap>Szerda</nap>
+            <kezdes>8:00</kezdes>
+            <befejezes>10:00</befejezes>
+        </idopont>
+        <helyszin>A1/204</helyszin>
+        <oktato>Dr. Suveges Gabor</oktato>
+        <szak>BGI</szak>
+    </ora>
+
+    <ora id="8" tipus="gyakorlat">
+        <kurzusnev>Adatkezeles XML-ben</kurzusnev>
+        <idopont>
+            <nap>Szerda</nap>
+            <kezdes>10:00</kezdes>
+            <befejezes>12:00</befejezes>
+        </idopont>
+        <helyszin>Inf102</helyszin>
+        <oktato>Dr. Bednarik Laszlo</oktato>
+        <szak>BGI</szak>
+    </ora>
+
+    <ora id="9" tipus="gyakorlat">
+        <kurzusnev>Szamvitel</kurzusnev>
+        <idopont>
+            <nap>Szerda</nap>
+            <kezdes>12:00</kezdes>
+            <befejezes>14:00</befejezes>
+        </idopont>
+        <helyszin>A3/313</helyszin>
+        <oktato>Varkonyiné dr.Juhasz Maria</oktato>
+        <szak>BGI</szak>
+    </ora>
+
+    <ora id="10" tipus="elmelet">
+        <kurzusnev>Vallalati informacios rendszerek fejlesztese</kurzusnev>
+        <idopont>
+            <nap>Szerda</nap>
+            <kezdes>14:00</kezdes>
+            <befejezes>16:00</befejezes>
+        </idopont>
+        <helyszin>Inf101</helyszin>
+        <oktato>Dr. Sasvari Peter Laszlo</oktato>
+        <szak>BGI</szak>
+    </ora>
+
+    <ora id="11" tipus="elmelet">
+        <kurzusnev>Termelesmenedzsment</kurzusnev>
+        <idopont>
+            <nap>Szerda</nap>
+            <kezdes>16:00</kezdes>
+            <befejezes>18:00</befejezes>
+        </idopont>
+        <helyszin>XXXVII. eloado</helyszin>
+        <oktato>Dr. Berenyi Laszlo</oktato>
+        <szak>BGI</szak>
+    </ora>
+
+    <ora id="12" tipus="gyakorlat">
+        <kurzusnev>Vallalati informacios rendszerek fejlesztese</kurzusnev>
+        <idopont>
+            <nap>Szerda</nap>
+            <kezdes>18:00</kezdes>
+            <befejezes>20:00</befejezes>
+        </idopont>
+        <helyszin>Inf101</helyszin>
+        <oktato>Dr. Sasvari Peter Laszlo</oktato>
+        <szak>BGI</szak>
+    </ora>
+
+    <ora id="13" tipus="gyakorlat">
+        <kurzusnev>Mesterseges intelligencia alapok</kurzusnev>
+        <idopont>
+            <nap>Csutortok</nap>
+            <kezdes>10:00</kezdes>
+            <befejezes>12:00</befejezes>
+        </idopont>
+        <helyszin>A2/I</helyszin>
+        <oktato>Fazekas Levente</oktato>
+        <szak>BGI</szak>
+    </ora>
+</V1C6ND_orarend>

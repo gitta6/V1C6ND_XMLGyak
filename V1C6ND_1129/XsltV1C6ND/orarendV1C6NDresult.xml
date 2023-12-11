@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+<body>
+<h2>Potoczki Gitta órarend – 2023/24. I. félév</h2>
+<table border="4">
+<tr bgcolor="peachpuff">
+<th>Id</th>
+<th>Típus</th>
+<th>Kurzusnév</th>
+<th colspan="2">Időpont</th>
+<th>Helyszin</th>
+<th>Oktato</th>
+<th>Szak</th>
+</tr>
+<tr>
+<td>1</td>
+<td>elmelet</td>
+<td>Penzugytan</td>
+<td>Hetfo</td>
+<td>10:00h - 12:00h</td>
+<td>XXXVII. eloado</td>
+<td>Dr. Bozsik Sandor</td>
+<td>BGI</td>
+</tr>
+<tr>
+<td>2</td>
+<td>elmelet</td>
+<td>WEB Technologiak I</td>
+<td>Hetfo</td>
+<td>14:00h - 16:00h</td>
+<td>A1/305</td>
+<td>Agardi Anita</td>
+<td>BGI</td>
+</tr>
+<tr>
+<td>3</td>
+<td>gyakorlat</td>
+<td>WEB Technologiak I</td>
+<td>Hetfo</td>
+<td>16:00h - 18:00h</td>
+<td>Inf103</td>
+<td>Agardi Anita</td>
+<td>BGI</td>
+</tr>
+<tr>
+<td>4</td>
+<td>elmelet</td>
+<td>Szamvitel</td>
+<td>Kedd</td>
+<td>8:00h - 10:00h</td>
+<td>A1/115</td>
+<td>Dr. Pal Tibor</td>
+<td>BGI</td>
+</tr>
+<tr>
+<td>5</td>
+<td>elmelet</td>
+<td>Mesterseges intelligencia alapok</td>
+<td>Kedd</td>
+<td>10:00h - 12:00h</td>
+<td>XXXII. eloado</td>
+<td>Fazekas Levente Aron</td>
+<td>BGI</td>
+</tr>
+<tr>
+<td>6</td>
+<td>elmelet</td>
+<td>Adatkezeles XML-ben</td>
+<td>Kedd</td>
+<td>12:00h - 14:00h</td>
+<td>XXXII. eloado</td>
+<td>Dr. Bednarik Laszlo</td>
+<td>BGI</td>
+</tr>
+<tr>
+<td>7</td>
+<td>gyakorlat</td>
+<td>Penzugytan</td>
+<td>Szerda</td>
+<td>8:00h - 10:00h</td>
+<td>A1/204</td>
+<td>Dr. Suveges Gabor</td>
+<td>BGI</td>
+</tr>
+<tr>
+<td>8</td>
+<td>gyakorlat</td>
+<td>Adatkezeles XML-ben</td>
+<td>Szerda</td>
+<td>10:00h - 12:00h</td>
+<td>Inf102</td>
+<td>Dr. Bednarik Laszlo</td>
+<td>BGI</td>
+</tr>
+<tr>
+<td>9</td>
+<td>gyakorlat</td>
+<td>Szamvitel</td>
+<td>Szerda</td>
+<td>12:00h - 14:00h</td>
+<td>A3/313</td>
+<td>Varkonyiné dr.Juhasz Maria</td>
+<td>BGI</td>
+</tr>
+<tr>
+<td>10</td>
+<td>elmelet</td>
+<td>Vallalati informacios rendszerek fejlesztese</td>
+<td>Szerda</td>
+<td>14:00h - 16:00h</td>
+<td>Inf101</td>
+<td>Dr. Sasvari Peter Laszlo</td>
+<td>BGI</td>
+</tr>
+<tr>
+<td>11</td>
+<td>elmelet</td>
+<td>Termelesmenedzsment</td>
+<td>Szerda</td>
+<td>16:00h - 18:00h</td>
+<td>XXXVII. eloado</td>
+<td>Dr. Berenyi Laszlo</td>
+<td>BGI</td>
+</tr>
+<tr>
+<td>12</td>
+<td>gyakorlat</td>
+<td>Vallalati informacios rendszerek fejlesztese</td>
+<td>Szerda</td>
+<td>18:00h - 20:00h</td>
+<td>Inf101</td>
+<td>Dr. Sasvari Peter Laszlo</td>
+<td>BGI</td>
+</tr>
+<tr>
+<td>13</td>
+<td>gyakorlat</td>
+<td>Mesterseges intelligencia alapok</td>
+<td>Csutortok</td>
+<td>10:00h - 12:00h</td>
+<td>A2/I</td>
+<td>Fazekas Levente</td>
+<td>BGI</td>
+</tr>
+</table>
+</body>
+</html>
