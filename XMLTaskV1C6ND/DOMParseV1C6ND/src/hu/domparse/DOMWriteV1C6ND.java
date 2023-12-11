@@ -33,20 +33,20 @@ public class DOMWriteV1C6ND {
 
         // Dolgozó elemek létrehozása és hozzáadása a gyökér elemhez:
         rootElement.appendChild(
-                createDolgozo(outputDocument, "1", "14725AE", "Tóth Erzsébet", "1985-07-11", "3300", "Eger",
-                        "Széchenyi út", "2", "1"));
+                createDolgozo(outputDocument, "1", "14725AE", "Toth Erzsebet", "1985-07-11", "3300", "Eger",
+                        "Szechenyi ut", "2", "1"));
         rootElement.appendChild(
                 createDolgozo(outputDocument, "2", "65815FV", "Nagy Zsigmond", "1970-01-05", "3500", "Miskolc",
                         "Kossuth utca", "36A", "2"));
         rootElement.appendChild(
-                createDolgozo(outputDocument, "3", "148575UK", "Kovács Levente", "1995-12-08", "3434", "Mályi",
-                        "Petőfi út", "50", "2"));
+                createDolgozo(outputDocument, "3", "148575UK", "Kovacs Levente", "1995-12-08", "3434", "Malyi",
+                        "Petofi ut", "50", "2"));
 
-        // Munkakör elemek:
-        rootElement.appendChild(createMunkakorok(outputDocument, "1", "NAV ügyintéző"));
-        rootElement.appendChild(createMunkakorok(outputDocument, "2", "gépjármű ügyintéző"));
-        rootElement.appendChild(createMunkakorok(outputDocument, "3", "CSOK ügyintéző"));
-        rootElement.appendChild(createMunkakorok(outputDocument, "3", "pályázati ügyintéző"));
+        // Munkakor elemek:
+        rootElement.appendChild(createMunkakorok(outputDocument, "1", "NAV ugyintezo"));
+        rootElement.appendChild(createMunkakorok(outputDocument, "2", "gepjarmu ugyintezo"));
+        rootElement.appendChild(createMunkakorok(outputDocument, "3", "CSOK ugyintezo"));
+        rootElement.appendChild(createMunkakorok(outputDocument, "3", "palyazati ugyintezo"));
 
         // Szerep elemek:
         rootElement.appendChild(createSzerep(outputDocument, "1", "2", "0"));
@@ -57,38 +57,38 @@ public class DOMWriteV1C6ND {
         rootElement.appendChild(createSzerep(outputDocument, "3", "2", "0"));
 
         // Munkakör ismeretek elemek:
-        rootElement.appendChild(createMunkakorIsm(outputDocument, "1", "adóbevallás kezelése"));
-        rootElement.appendChild(createMunkakorIsm(outputDocument, "1", "adózási ismeretek"));
+        rootElement.appendChild(createMunkakorIsm(outputDocument, "1", "adobevallas kezelese"));
+        rootElement.appendChild(createMunkakorIsm(outputDocument, "1", "adozasi ismeretek"));
         rootElement.appendChild(createMunkakorIsm(outputDocument, "2", "MS Office ismeretek"));
-        rootElement.appendChild(createMunkakorIsm(outputDocument, "2", "forgalmi engedély kezelése"));
-        rootElement.appendChild(createMunkakorIsm(outputDocument, "2", "adásvételi szerződés kezelése"));
-        rootElement.appendChild(createMunkakorIsm(outputDocument, "2", "törzskönyv kezelése"));
+        rootElement.appendChild(createMunkakorIsm(outputDocument, "2", "forgalmi engedely kezelese"));
+        rootElement.appendChild(createMunkakorIsm(outputDocument, "2", "adasveteli szerzodes kezelese"));
+        rootElement.appendChild(createMunkakorIsm(outputDocument, "2", "torzskonyv kezelese"));
         rootElement.appendChild(createMunkakorIsm(outputDocument, "3", "MS Office ismeretek"));
         rootElement.appendChild(createMunkakorIsm(outputDocument, "3", "jogi ismeretek"));
-        rootElement.appendChild(createMunkakorIsm(outputDocument, "3", "számviteli ismeretek"));
+        rootElement.appendChild(createMunkakorIsm(outputDocument, "3", "szamviteli ismeretek"));
         rootElement.appendChild(createMunkakorIsm(outputDocument, "4", "MS Office ismeretek"));
         rootElement.appendChild(createMunkakorIsm(outputDocument, "4", "jogi ismeretek"));
 
         // Ablak elemek:
-        rootElement.appendChild(createAblak(outputDocument, "1", "adóbevallás", "2"));
+        rootElement.appendChild(createAblak(outputDocument, "1", "adobevallas", "2"));
         rootElement.appendChild(createAblak(outputDocument, "2", "személyig.", "4"));
-        rootElement.appendChild(createAblak(outputDocument, "3", "személyes iratok", "3"));
+        rootElement.appendChild(createAblak(outputDocument, "3", "szemelyes iratok", "3"));
 
         // Ügyfél elemek:
         rootElement
-                .appendChild(createUgyfel(outputDocument, "1", "577403KE", "Hegyi Károly", "1969-09-15", "3432", "Emőd",
-                        "Kossuth út", "15", "3", "2022-11-18T08:06:00", "2022-11-18T08:24:00"));
+                .appendChild(createUgyfel(outputDocument, "1", "577403KE", "Hegyi Karoly", "1969-09-15", "3432", "Emod",
+                        "Kossuth ut", "15", "3", "2022-11-18T08:06:00", "2022-11-18T08:24:00"));
         rootElement.appendChild(
-                createUgyfel(outputDocument, "2", "775491HB", "Kis Elek", "1979-04-05", "3300", "Eger", "Petőfi út",
+                createUgyfel(outputDocument, "2", "775491HB", "Kis Elek", "1979-04-05", "3300", "Eger", "Petofi ut",
                         "6B", "5", "2022-11-18T08:10:00", "2022-11-18T08:25:00"));
         rootElement.appendChild(
-                createUgyfel(outputDocument, "3", "224546DF", "Tóth Mária", "1980-12-25", "3400", "Mezőkövesd",
-                        "Mátyás király út", "189", "2", "2022-11-18T08:11:00", "2022-11-18T08:29:00"));
+                createUgyfel(outputDocument, "3", "224546DF", "Toth Maria", "1980-12-25", "3400", "Mezokovesd",
+                        "Matyas kiraly ut", "189", "2", "2022-11-18T08:11:00", "2022-11-18T08:29:00"));
 
         // Felettes elemek:
-        rootElement.appendChild(createFelettes(outputDocument, "1", "468534WW", "Piros Rózsa"));
-        rootElement.appendChild(createFelettes(outputDocument, "2", "795341AC", "Szabó Tamás"));
-        rootElement.appendChild(createFelettes(outputDocument, "3", "861888JB", "Lengyel László"));
+        rootElement.appendChild(createFelettes(outputDocument, "1", "468534WW", "Piros Rozsa"));
+        rootElement.appendChild(createFelettes(outputDocument, "2", "795341AC", "Szabo Tamas"));
+        rootElement.appendChild(createFelettes(outputDocument, "3", "861888JB", "Lengyel Laszlo"));
 
         // XML transzformációhoz szükséges Transformer objektum inicializálása:
         TransformerFactory transformerFactory = TransformerFactory.newInstance();

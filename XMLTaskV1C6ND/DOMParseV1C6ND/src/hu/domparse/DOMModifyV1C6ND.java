@@ -55,8 +55,8 @@ public class DOMModifyV1C6ND {
 
                 // Tóth Erzsébet nevének megváltoztatása, mert férjhez ment:
                 if ("nev".equals(element.getNodeName())) {
-                    if ("Tóth Erzsébet".equals(element.getTextContent())) {
-                        element.setTextContent("Kiss Erzsébet");
+                    if ("Toth Erzsebet".equals(element.getTextContent())) {
+                        element.setTextContent("Kiss Erzsebet");
                     }
                 }
             }
@@ -71,8 +71,8 @@ public class DOMModifyV1C6ND {
 
                 // A gépjármű ügyintéző munkakör megnevezésének változtatása (pontosítás):
                 if ("megnevezes".equals(element.getNodeName())) {
-                    if ("gépjármű ügyintéző".equals(element.getTextContent())) {
-                        element.setTextContent("személygépjármű ügyintéző");
+                    if ("gepjarmu ugyintezo".equals(element.getTextContent())) {
+                        element.setTextContent("szemelygepjármu ugyintezo");
                     }
                 }
             }
@@ -105,8 +105,8 @@ public class DOMModifyV1C6ND {
                 // A személyigazolvány ügykör változtatása, mert összevonásra került egy másik
                 // ügykörrel:
                 if ("ugykor".equals(element.getNodeName())) {
-                    if ("személyig.".equals(element.getTextContent())) {
-                        element.setTextContent("személyig., lakcímkártya");
+                    if ("szemelyig.".equals(element.getTextContent())) {
+                        element.setTextContent("szemelyig., lakcimkartya");
                     }
                 }
             }
@@ -138,8 +138,8 @@ public class DOMModifyV1C6ND {
 
                 // Piros Rózsa nevének megváltoztatása, mert férjhez ment:
                 if ("nev".equals(element.getNodeName())) {
-                    if ("Piros Rózsa".equals(element.getTextContent())) {
-                        element.setTextContent("Fehérné Piros Rózsa");
+                    if ("Piros Rozsa".equals(element.getTextContent())) {
+                        element.setTextContent("Feherne Piros Rozsa");
                     }
                 }
             }

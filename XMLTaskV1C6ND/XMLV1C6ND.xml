@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <V1C6ND_okmanyiroda xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaV1C6ND.xsd">
 
-    <!-- DOLGOZÓK -->
+    <!-- DOLGOZOK -->
 
     <dolgozo did="1" fid="1">
         <szig>14725AE</szig>
-        <nev>Tóth Erzsébet</nev>
+        <nev>Toth Erzsebet</nev>
         <szulido>1985-07-11</szulido>
         <irsz>3300</irsz>
         <varos>Eger</varos>
-        <utca>Széchenyi út</utca>
+        <utca>Szechenyi ut</utca>
         <hsz>2</hsz>
     </dolgozo>
 
@@ -25,36 +25,36 @@
 
     <dolgozo did="3" fid="2">
         <szig>148575UK</szig>
-        <nev>Kovács Levente</nev>
+        <nev>Kovacs Levente</nev>
         <szulido>1995-12-08</szulido>
         <irsz>3434</irsz>
-        <varos>Mályi</varos>
-        <utca>Petőfi út</utca>
+        <varos>Malyi</varos>
+        <utca>Petofi ut</utca>
         <hsz>50</hsz>
     </dolgozo>
 
-    <!-- további dolgozo elemek -->
+    <!-- tovabbi dolgozo elemek -->
 
-    <!-- MUNKAKÖRÖK -->
+    <!-- MUNKAKOROK -->
 
     <munkakorok mid="1">
-        <megnevezes>NAV ügyintéző</megnevezes>
+        <megnevezes>NAV ugyintezo</megnevezes>
     </munkakorok>
 
     <munkakorok mid="2">
-        <megnevezes>gépjármű ügyintéző</megnevezes>
+        <megnevezes>gepjarmu ugyintezo</megnevezes>
     </munkakorok>
 
     <munkakorok mid="3">
-        <megnevezes>CSOK ügyintéző</megnevezes>
+        <megnevezes>CSOK ugyintezo</megnevezes>
     </munkakorok>
   
     <munkakorok mid="4">
-        <megnevezes>pályázati ügyintéző</megnevezes>
+        <megnevezes>palyazati ugyintezo</megnevezes>
     </munkakorok>
 
 
-    <!-- további munkakorok elemek -->
+    <!-- tovabbi munkakorok elemek -->
 
     <!-- SZEREP -->
 
@@ -82,26 +82,26 @@
         <helyettesit-e>0</helyettesit-e>
     </szerep>
 
-    <!-- további szerep elemek -->
+    <!-- tovabbi szerep elemek -->
 
-    <!-- MUNKAKÖR ISMERETEK -->
+    <!-- MUNKAKOR ISMERETEK -->
 
     <munkakor_ism mid="1"> 
-        <ismeretek>adóbevallás kezelése</ismeretek>
-        <ismeretek>adózási ismeretek</ismeretek>
+        <ismeretek>adobevallas kezelese</ismeretek>
+        <ismeretek>adozasi ismeretek</ismeretek>
     </munkakor_ism>
 
     <munkakor_ism mid="2"> 
         <ismeretek>MS Office ismeretek</ismeretek>
-        <ismeretek>forgalmi engedély kezelése</ismeretek>
-        <ismeretek>adásvételi szerződés kezelése</ismeretek>
-        <ismeretek>törzskönyv kezelése</ismeretek>
+        <ismeretek>forgalmi engedely kezelese</ismeretek>
+        <ismeretek>adasveteli szerzodes kezelese</ismeretek>
+        <ismeretek>torzskonyv kezelese</ismeretek>
     </munkakor_ism>
 
     <munkakor_ism mid="3"> 
         <ismeretek>MS Office ismeretek</ismeretek>
         <ismeretek>jogi ismeretek</ismeretek>
-        <ismeretek>számviteli ismeretek</ismeretek>
+        <ismeretek>szamviteli ismeretek</ismeretek>
     </munkakor_ism>
         
     <munkakor_ism mid="4">
@@ -109,33 +109,33 @@
         <ismeretek>jogi ismeretek</ismeretek>
     </munkakor_ism>
 
-    <!-- további munkakor_ism elemek -->
+    <!-- tovabbi munkakor_ism elemek -->
 
     <!-- ABLAK -->
 
     <ablak aid="1" did="2">
-        <ugykor>adóbevallás</ugykor>
+        <ugykor>adobevallas</ugykor>
     </ablak>
 
     <ablak aid="2" did="4">
-        <ugykor>személyig.</ugykor>
+        <ugykor>szemelyig.</ugykor>
     </ablak>
 
     <ablak aid="3" did="3">
-        <ugykor>személyes iratok</ugykor>
+        <ugykor>szemelyes iratok</ugykor>
     </ablak>
 
-    <!-- további ablak elemek -->
+    <!-- tovabbi ablak elemek -->
 
-    <!-- ÜGYFÉL -->
+    <!-- UGYFEL -->
 
     <ugyfel uid="1" aid="3">
         <szig>577403KE</szig>
-        <nev>Hegyi Károly</nev>
+        <nev>Hegyi Karoly</nev>
         <szulido>1969-09-15</szulido>
         <irsz>3432</irsz>
-        <varos>Emőd</varos>
-        <utca>Kossuth út</utca>
+        <varos>Emod</varos>
+        <utca>Kossuth ut</utca>
         <hsz>15</hsz>
         <belepes>2022-11-18T08:06:00</belepes>
         <kilepes>2022-11-18T08:24:00</kilepes>
@@ -147,7 +147,7 @@
         <szulido>1979-04-05</szulido>
         <irsz>3300</irsz>
         <varos>Eger</varos>
-        <utca>Petőfi út</utca>
+        <utca>Petofi ut</utca>
         <hsz>6B</hsz>
         <belepes>2022-11-18T08:10:00</belepes>
         <kilepes>2022-11-18T08:25:00</kilepes>
@@ -155,34 +155,34 @@
 
     <ugyfel uid="3" aid="2">
         <szig>224546DF</szig>
-        <nev>Tóth Mária</nev>
+        <nev>Toth Maria</nev>
         <szulido>1980-12-25</szulido>
         <irsz>3400</irsz>
-        <varos>Mezőkövesd</varos>
-        <utca>Mátyás király út</utca>
+        <varos>Mezokovesd</varos>
+        <utca>Matyas kiraly ut</utca>
         <hsz>189</hsz>
         <belepes>2022-11-18T08:11:00</belepes>
         <kilepes>2022-11-18T08:29:00</kilepes>
     </ugyfel>
 
-    <!-- további ugyfel elemek -->
+    <!-- tovabbi ugyfel elemek -->
 
     <!-- FELETTES -->
     <felettes fid="1">
         <szig>468534WW</szig>
-        <nev>Piros Rózsa</nev>
+        <nev>Piros Rozsa</nev>
     </felettes>
 
     <felettes fid="2">
         <szig>795341AC</szig>
-        <nev>Szabó Tamás</nev>
+        <nev>Szabo Tamas</nev>
     </felettes>
 
     <felettes fid="3">
         <szig>861888JB</szig>
-        <nev>Lengyel László</nev>
+        <nev>Lengyel Laszlo</nev>
     </felettes>
 
-    <!-- további felettes elemek -->
+    <!-- tovabbi felettes elemek -->
 
 </V1C6ND_okmanyiroda>
